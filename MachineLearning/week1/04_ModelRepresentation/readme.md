@@ -17,7 +17,7 @@
 訓練セット(データセット) を 学習アルゴリズム に入力  
 学習アルゴリズム は ある関数(慣習的にh) を出力  
 
-<img src="https://github.com/ysk-in/practice/blob/master/MachineLearning/img/01_04_process_learn_a_function.png" width=25%>  
+<img src="../../img/01_04_process_learn_a_function.png" width=25%>  
 
 関数hに 家のサイズ(x)を入力することで 価格(y)が推測できる  
 
