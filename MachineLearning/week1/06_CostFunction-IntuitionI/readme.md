@@ -13,10 +13,14 @@
 TrainingSet(x, y)として(1, 1), (2, 2), (3, 3)が与えられた場合は以下プロット  
 <img src="../../img/01_06_regression_dataset.png" width=25%>  
 
-Θ1=1を考えるとき 以下の左の画像のように直線(hΘ(x))・プロット(J)が表現できる  
-同様にΘ1=0.5のときは真ん中の画像，Θ1=0のときは右の画像の通りとなる  
-<img src="../../img/01_06_regression_theta1_1.png" width=30%>,
-<img src="../../img/01_06_regression_theta1_05.png" width=30%>,
-<img src="../../img/01_06_regression_theta1_0.png" width=30%>  
-上記の通りJが0に最も近いとき最適なパラメタ(Θ1)となることが分かる  
-最適なパラメタ = TrainingSetのプロット との距離が最短な 仮説関数hΘ(x)のΘ
+Θ1=1を考えるとき 以下の通り考えることができる  
+<img src="../../img/01_06_regression_theta1_1.png" width=50%>  
+仮説関数にΘ1=1与えたときの直線は 左グラフの通りの線となる  
+また このときのJ(Θ1)を 目的関数を利用し求めると(左グラフの下の式)0であることが分かる  
+これをプロットすると右グラフの通りとなる
+
+同様にΘ1=0.5のとき Θ1=0のときについて考えると 以下の通りとなる  
+<img src="../../img/01_06_regression_theta1_05.png" width=40%>　　
+<img src="../../img/01_06_regression_theta1_0.png" width=40%>  
+上記の通り J が0に最も近いとき最適なパラメタ(Θ1)となることが分かる  
+(最適なパラメタ = TrainingSetのプロット との距離が最短な 仮説関数hΘ(x)のΘ)
