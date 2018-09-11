@@ -14,7 +14,7 @@ TrainingSet(x, y)として(1, 1), (2, 2), (3, 3)が与えられた場合は以�
 
 Θ1=1を考えるとき 以下の左の画像のように直線(hΘ(x))・プロット(J)が表現できる  
 同様にΘ1=0.5のときは真ん中の画像，Θ1=0のときは右の画像の通りとなる  
-<img src="../../img/01_06_regression_theta1_1.png" width=25%>,  
+<img src="../../img/01_06_regression_theta1_1.png" width=25%>, 
 <img src="../../img/01_06_regression_theta1_05.png" width=25%>, 
 <img src="../../img/01_06_regression_theta1_0.png" width=25%>  
 上記の通りJが0に最も近いとき最適なパラメタ(Θ1)となることが分かる  
