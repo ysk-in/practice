@@ -2,7 +2,7 @@
 目的関数を最小化するためのアルゴリズム Gradient Descent(最急降下法)について学ぶ  
 
 ## Gradient Descentの特徴
-Gradient Descentは以下の特徴がある(らしい)
+Gradient Descentは以下の特徴がある
 * 線形回帰以外にも適用可能な より汎用的な関数
 * Θ0, Θ1だけでなく任意(Θn)のパラメタを求めるのに適用可能
 
