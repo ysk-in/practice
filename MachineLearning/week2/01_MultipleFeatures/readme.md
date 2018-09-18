@@ -1,5 +1,5 @@
 # Multiple Features
-1週目では変数が1つの線形回帰を扱った
+Week1では変数が1つの線形回帰を扱った  
 ここからは変数がnつの線形回帰を扱う
 
 ## Multivariate linear regression の変数
@@ -18,7 +18,7 @@ xとして階数や築年数が追加された以下のようなイメージ
   つまり TrainingSet3行目のNumberOfFloorsを指す
 
 ## Multivariate linear regression の式
-複数変数を持つ仮説は以下の式で表すことができる
+複数の変数を持つ仮説は以下の式で表すことができる
 <img src="../../img/02_01_multiple_features_algorithm.png" width=50%>  
 またこの式はベクトルを用いることで<img src="https://latex.codecogs.com/gif.latex?\Theta&space;^{T}x" title="\Theta ^{T}x" />と表すことができる
 <img src="../../img/02_01_multiple_features_vectorization.png" width=50%>  
