@@ -18,7 +18,7 @@ Gradient Descentが収束/最適値を求めるのに時間がかかる
 およそ-3 <= x(i) <= 3 または -1/3 <= x(i) <= 1/3   
 
 実現するため 各x(i)を以下で代入する  
-<img src="https://latex.codecogs.com/gif.latex?x_{i}&space;:=&space;\frac{x_{i}-\mu_{i}}{s_{i}}" title="x_{i} := \frac{x_{i}-\mu_{i}}{s_{i}}" width=50%/>
+<img src="https://latex.codecogs.com/gif.latex?x_{i}&space;:=&space;\frac{x_{i}-\mu_{i}}{s_{i}}" title="x_{i} := \frac{x_{i}-\mu_{i}}{s_{i}}" />
 * <img src="https://latex.codecogs.com/gif.latex?\mu_{i}" title="\mu_{i}" />: パラメタi(サイズ/広さなど)の変数の平均  
   つまり広さパラメタ(<img src="https://latex.codecogs.com/gif.latex?x_{1}" title="x_{1}" />)だったら <img src="https://latex.codecogs.com/gif.latex?\mu_{1}" title="\mu_{1}" />=2000
 * <img src="https://latex.codecogs.com/gif.latex?s_{i}" title="s_{i}" />: 値の範囲のこと (max - min)で求める
