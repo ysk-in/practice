@@ -21,5 +21,5 @@ xとして階数や築年数が追加された以下のようなイメージ
 複数の変数を持つ仮説は以下の式で表すことができる  
 <img src="../../img/02_01_multiple_features_algorithm.png" width=50%>  
 パラメータθ0 は 変数x0(1固定) を持つと考えることで  
-ベクトル(<img src="https://latex.codecogs.com/gif.latex?\Theta^{T}X" title="\Theta^{T}X" />)で表現することができる  
+ベクトル(<img src="https://latex.codecogs.com/gif.latex?\theta^{T}x" title="\theta^{T}x" />)で表現することができる  
 <img src="../../img/02_01_multiple_features_vectorization.png" width=50%>  
