@@ -13,7 +13,7 @@ xとして階数や築年数が追加された以下のようなイメージ
 * n : 変数の数を表す(ちなみにweek1にあったようにmはトレーニングセットの数)
 * <img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" /> : i番目のトレーニングセットを指す  
   例えば <img src="https://latex.codecogs.com/gif.latex?x^{(2)}" title="x^{(2)}" /> は 2行目(1416 から始まるcolumn)のトレーニングセットを指す
-* <img src="https://latex.codecogs.com/gif.latex?x^{(i)}_{j}" title="x^{(i)}_{j}" /> : column=i の row=j の項目を指す  
+* <img src="https://latex.codecogs.com/gif.latex?x^{(i)}_{j}" title="x^{(i)}_{j}" /> : i番目のトレーニングセット の j番目のパラメータ を指す  
   例えば <img src="https://latex.codecogs.com/gif.latex?x^{(2)}_{3}" title="x^{(2)}_{3}" /> は column=2, row=3 の2  
   つまり TrainingSet3行目のNumberOfFloorsを指す
 
