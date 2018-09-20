@@ -3,7 +3,7 @@
 
 ## 非可逆行列の正規方程式について
 正規方程式を求める式は<img src="https://latex.codecogs.com/gif.latex?\theta&space;=&space;(X^{T}X)^{-1}X^{T}y" title="\theta = (X^{T}X)^{-1}X^{T}y" />と表現できるが  
-行列によっては逆行列が存在しない(<img src="https://latex.codecogs.com/gif.latex?\theta&space;=&space;(X^{T}X)^{-1}" title="\theta = (X^{T}X)^{-1}" />が疑似逆行列となる)  
+逆行列が存在しない行列がある(<img src="https://latex.codecogs.com/gif.latex?(X^{T}X)^{-1}" title="(X^{T}X)^{-1}" />が疑似逆行列となる行列)  
 <img src="../../img/02_07_normal_equation_noninvertibility.png" width=50%>  
 Octaveではpinv関数を用いることで 必要に応じ 逆行列/疑似逆行列 が取得できる  
 そのため <img src="https://latex.codecogs.com/gif.latex?\theta&space;=&space;(X^{T}X)^{-1}X^{T}y" title="\theta = (X^{T}X)^{-1}X^{T}y" /> ではpinv関数を使用すれば問題ない  
