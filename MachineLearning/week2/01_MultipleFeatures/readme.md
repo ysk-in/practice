@@ -10,12 +10,12 @@ MultivariateLinearRegression(多変量線形回帰?)と呼ぶ
 xとして階数や築年数が追加された以下のようなイメージ  
 <img src="../../img/02_01_multiple_features.png" width=50%>  
 これ以降は以下の通り変数定義を追加する
-* n : 変数の数を表す(ちなみにweek1にあったようにmはトレーニングセットの数)
+* n : 変数の数を表す  
 * <img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" /> : i番目のトレーニングセットを指す  
-  例えば <img src="https://latex.codecogs.com/gif.latex?x^{(2)}" title="x^{(2)}" /> は 2行目(1416 から始まるcolumn)のトレーニングセットを指す
+  例えば <img src="https://latex.codecogs.com/gif.latex?x^{(2)}" title="x^{(2)}" /> は 2行目(1416 から始まるrow)のトレーニングセットを指す
 * <img src="https://latex.codecogs.com/gif.latex?x^{(i)}_{j}" title="x^{(i)}_{j}" /> : i番目のトレーニングセット の j番目のパラメータ を指す  
-  例えば <img src="https://latex.codecogs.com/gif.latex?x^{(2)}_{3}" title="x^{(2)}_{3}" /> は column=2, row=3 の2  
-  つまり TrainingSet3行目のNumberOfFloorsを指す
+  例えば <img src="https://latex.codecogs.com/gif.latex?x^{(2)}_{3}" title="x^{(2)}_{3}" /> は row=2, column=3 の2  
+  つまり TrainingSet2行目のNumberOfFloorsを指す
 
 ## Multivariate linear regression の式
 複数の変数を持つ仮説は以下の式で表すことができる  
