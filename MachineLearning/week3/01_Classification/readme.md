@@ -1,23 +1,18 @@
-# Normal Equation Noninvertibility
-非可逆行列(逆行列が存在しない行列)の正規方程式について  
+# Classification(分類)
+ここからはClassification(分類)について扱う  
 
-## 非可逆行列の正規方程式について
-正規方程式を求める式は<img src="https://latex.codecogs.com/gif.latex?\theta&space;=&space;(X^{T}X)^{-1}X^{T}y" title="\theta = (X^{T}X)^{-1}X^{T}y" />と表現できるが  
-逆行列が存在しない行列がある(<img src="https://latex.codecogs.com/gif.latex?(X^{T}X)^{-1}" title="(X^{T}X)^{-1}" />が疑似逆行列となる行列)  
-<img src="../../img/02_07_normal_equation_noninvertibility.png" width=50%>  
-Octaveではpinv関数を用いることで 必要に応じ 逆行列/疑似逆行列 が取得できる  
-そのため <img src="https://latex.codecogs.com/gif.latex?\theta&space;=&space;(X^{T}X)^{-1}X^{T}y" title="\theta = (X^{T}X)^{-1}X^{T}y" /> ではpinv関数を使用すれば問題ない  
+## Classificationで用いる仮説
+week1であったようにClassificationの事例は以下のようなもの  
+<img src="../../img/03_01_exmaple_of_classification.png" width=50%>  
+予測する値が離散値(連続値でない)であるもの  
+つまり y の値が {0, 1} になるもの(2, 3, ...など多種を扱う場合もある)  
 
-疑似行列については 以下が理解し易かった  
-http://zellij.hatenablog.com/entry/20120811/p1
+Classificationのケースに  
+LinearRegression(Regression(回帰)で扱った仮説)を適用することを考える  
+<img src="../../img/03_01_apply_linear_regression_for_classification.png" width=50%>  
+閾値を設けることで(上記では0.5)yを 0 | 1 に分類することは考えられるが  
+離散値を扱うのには LinearRegressionは最適でないと考えられる  
 
-## どのようなケースで非可逆行列になるか
-例えば 以下のケースで非可逆行列になる  
-* 強い関連を持つパラメタが含まれるとき (以下の上のケース)  
-* パラメタが多い(トレーニングセットの数より多い)とき (以下の下のケース)  
-<img src="../../img/02_07_non_invertibility.png" width=50%>  
-このようなときは 以下の対処を採る必要がある  
-
-* 強い関連を持つパラメタを削除する(1つだけ残す)  
-* 多すぎるパラメタのうちいくつかを削除したり  
-  正規化(この後で説明がある)したりする  
+LogisticRegressionを用いることで  
+0 <= hθ(x) <= 1 とする予測ができる(らしい)  
+<img src="../../img/03_01_logistic_regression.png" width=50%>  
