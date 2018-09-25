@@ -21,7 +21,7 @@ Classificationの仮説は 予測値に応じ 以下のような分類をする�
 <img src="../../img/03_03_apply_linear_regression_to_gz.png" >  
 
 つまり <img src="https://latex.codecogs.com/gif.latex?\theta^Tx" title="\theta^Tx" />が0以上のときはy=1  
-<img src="https://latex.codecogs.com/gif.latex?\theta^Tx" title="\theta^Tx" />が0以下のときはy=0と考えることができる  
+<img src="https://latex.codecogs.com/gif.latex?\theta^Tx" title="\theta^Tx" />が0未満のときはy=0と考えることができる  
 <img src="../../img/03_03_function_of_decision_boundary.png" >  
 
 ## Decision Boundaryとは なにか
