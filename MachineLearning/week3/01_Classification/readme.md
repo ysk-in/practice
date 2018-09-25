@@ -14,5 +14,5 @@ LinearRegression(Regression(回帰)で扱った仮説)を適用することを�
 離散値を扱うのには LinearRegressionは最適でないと考えられる  
 
 LogisticRegressionを用いることで  
-0 <= hθ(x) <= 1 とする予測ができる(らしい)  
+離散値の予測に最適な 0 <= hθ(x) <= 1 となる仮説を導くことができる(らしい)  
 <img src="../../img/03_01_logistic_regression.png" width=50%>  
