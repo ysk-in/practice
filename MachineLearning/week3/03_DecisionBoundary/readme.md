@@ -30,6 +30,6 @@ y = 0 とするか y = 1 とするか どちらに分類するかを分ける線
 例えば 以下の仮説を考えるとき  
 Decision Boundaryは以下の直線となり  
 この線によって分けられた それぞれの領域が y=0 または y=1 で分類できる  
-<img src="../../img/03_03_decision_boundary.png" witdh=50% >  
+<img src="../../img/03_03_decision_boundary.png" width=50% >  
 fθ(x)(-3 + x1 + x2) >= 0 は x1 + x2 >= 3 と変形でき  
 この条件を満たすとき つまり 直線より上に分類されるとき y=1となることが分かる  
