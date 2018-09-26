@@ -6,7 +6,7 @@ Classificationに適した予測値(0 <= hθ(x) <= 1)になる仮説にするた
 LinearRegressionの式(<img src="https://latex.codecogs.com/gif.latex?\theta^Tx" title="\theta^Tx" />)に手を加え  
 LinearRegressionの式をパラメタに持つ仮説<img src="https://latex.codecogs.com/gif.latex?g(\theta^Tx)" title="g(\theta^Tx)" />を考える  
 <img src="../../img/03_02_logistic_regression_model.png" width=50%>  
-g(z)の式は SigmoidFunction または LogsticFunctionと呼ぶ式のため  
+g(z)の式は SigmoidFunction または LogisticFunctionと呼ぶ式のため  
 この仮説をLogisticRegressionと呼ぶ  
 
 g(z)の式についてまとめる以下の通り  
