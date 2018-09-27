@@ -21,12 +21,12 @@ GradientDescentのようなイテレーションが不要になる
 ## Normal Equationのアルゴリズム(式)
 これは
 <img src="https://latex.codecogs.com/gif.latex?\theta&space;=&space;(X^{T}X)^{-1}X^{T}y" title="\theta = (X^{T}X)^{-1}X^{T}y" />とも表現できる  
-// らしい...何故このように表現できるのか理解できていない
+// らしい...何故このように表現できるのか理解できていない  
 <img src="../../img/02_06_normal_equation_algorithm.png" width=50%>  
 
 <img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />(feature matrix), X(design matrix), <img src="https://latex.codecogs.com/gif.latex?\overrightarrow{y}" title="\overrightarrow{y}" />(vectorized y)について  
 <img src="../../img/02_06_feature_vector_and_design_matrix_and_y.png" width=50%>  
-* <img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />(feature matrix): n+1次元ベクトルで 各行にトレーニングセットのi番目のfeatureを保持  
+* <img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />(feature matrix): n+1次元ベクトルで i番目のトレーニングセットのfeatureを各行に保持  
 * X(design matrix): m*(n+1)の行列で各行に<img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />のトレーニングセットのfeaturesを保持  
 * <img src="https://latex.codecogs.com/gif.latex?\overrightarrow{y}" title="\overrightarrow{y}" />(vectorized y): m次元のベクトルで 各行にトレーニングセットのyを保持
 
