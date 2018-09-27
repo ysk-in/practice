@@ -13,6 +13,6 @@ GradientDescentにRegularizationするための式を加え以下となる
 
 ## LinearRegressionをNormalEquationでFittingするときのRegularization
 同様に RegularizedなNormalEquationの式は以下  
-<img src="../../img/03_10_normalized_normal_equation.png" width=40%>  
+<img src="../../img/03_10_normalized_normal_equation.png" width=30%>  
 λ*Lの項がNormalizationのための項  
 Lは上記の通り diag=(0, 1, 1, ..., 1)の単位行列 (用語間違ってるかも...)
