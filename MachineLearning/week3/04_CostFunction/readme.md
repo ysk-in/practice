@@ -16,8 +16,8 @@ LogisticRegressionでは以下のCostFunctionを用いる
 <img src="../../img/03_04_cost_function_for_logistic_function.png" width=50% >  
 
 この関数について図時すると以下の通り  
-<img src="../../img/03_04_graph_of_cost_function_y1.png" width=45% >
-<img src="../../img/03_04_graph_of_cost_function_y0.png" width=45% >  
+<img src="../../img/03_04_graph_of_cost_function_y1.png" width=30% >
+<img src="../../img/03_04_graph_of_cost_function_y0.png" width=30% >  
 実データ(y)と 異なる予測をした場合にコストが非常に大きくなり  
 正しく予測できる場合にコストが(ほぼ)0になる 適切なコスト計算ができることがわかる  
 
