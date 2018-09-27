@@ -23,4 +23,4 @@ GradientDescent(前出の以下)を
 LinearRegressionのときと同様 各<img src="https://latex.codecogs.com/gif.latex?\theta_{j}" title="\theta_{j}" />は同時に更新する必要がある  
 
 また ベクトル化すると以下  
-<img src="../../img/03_05_vectorized_gradient_descent_of_logistic_regression.png" width=30% >  
+<img src="../../img/03_05_vectorized_gradient_descent_of_logistic_regression.png" >  
