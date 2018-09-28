@@ -8,8 +8,7 @@ GradientDescentにRegularizationするための式を加え以下となる
 <img src="https://latex.codecogs.com/gif.latex?\frac{\lambda}{m}\theta_{j}" title="\frac{\lambda}{m}\theta_{j}" />がNormalizedのための項  
 
 また <img src="https://latex.codecogs.com/gif.latex?\theta_{j}" title="\theta_{j}" />のための式は以下に変形できる  
-<img src="../../img/03_10_manupulated_normalized_gradient_descent.png" >  
-// 変形の過程は未把握 現時点ではこういうものと割り切る  
+<img src="../../img/03_10_manupulated_normalized_gradient_descent.png" >    
 
 ## LinearRegressionをNormalEquationでFittingするときのRegularization
 同様に RegularizedなNormalEquationの式は以下  
