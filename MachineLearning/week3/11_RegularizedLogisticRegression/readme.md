@@ -22,4 +22,4 @@ Regularizedすると以下
 ## AdvancedOptimazationのRegularization
 LogisticRegressionのより洗練されたCostFunctionについて  
 Regularizationすると以下の通り  
-<img src="../../img/03_11_regularized_advanced_optimazation_of_logistic_regression.png" width=50% >  
+<img src="../../img/03_11_regularized_advanced_optimazation_of_logistic_regression.png" width=65% >  
