@@ -5,10 +5,13 @@ Feature Scalingについて学ぶ
 ## Gradient Descentが収束するステップについて
 仮説の各パラメタで 値域が異なると  
 Gradient Descentが収束/最適値を求めるのに時間がかかる  
-// なぜなのかの詳細は理解できていない...  
 <img src="../../img/02_03_feature_scaling_idea.png" width=50%>  
 仮説のパラメタの値域(ここではθ1, θ2)が大きく異なると  
 等高線は上図の左のように細長い円を描き 最適値を求めるには多くのステップが必要  
+// 理由ははっきりとは分かっていないけれど  
+// 値域の小さなパラメタに合わせた学習率を採る必要がありそうだし(?)  
+// 各θ(θj)について同時に更新するため 最も更新回数が多いθjの回数分ステップが必要になりそう(?)  
+// だから 多くのステップが必要になる(?)  
 
 対して パラメタが近い値域をとる場合 ステップ数が少なく済む  
 
@@ -21,7 +24,7 @@ Gradient Descentが収束/最適値を求めるのに時間がかかる
 <img src="https://latex.codecogs.com/gif.latex?x_{i}&space;:=&space;\frac{x_{i}-\mu_{i}}{s_{i}}" title="x_{i} := \frac{x_{i}-\mu_{i}}{s_{i}}" />
 * <img src="https://latex.codecogs.com/gif.latex?\mu_{i}" title="\mu_{i}" />: パラメタi(サイズ/広さなど)の変数の平均  
   つまり広さパラメタ(<img src="https://latex.codecogs.com/gif.latex?x_{1}" title="x_{1}" />)だったら <img src="https://latex.codecogs.com/gif.latex?\mu_{1}" title="\mu_{1}" />=2000
-* <img src="https://latex.codecogs.com/gif.latex?s_{i}" title="s_{i}" />: 値の範囲のこと (max - min)で求める
+* <img src="https://latex.codecogs.com/gif.latex?s_{i}" title="s_{i}" />: 値の範囲(max - minで求める)
 
 例えば 以下のように求める  
 <img src="../../img/02_03_feature_scaling_mean_nornalization.png" width=50%>
