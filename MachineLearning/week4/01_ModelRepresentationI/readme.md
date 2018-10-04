@@ -29,10 +29,9 @@ InputLayerとOutputLayerの間にLayers(IntermediateLayers)を持つことがで
 <img src="../../img/04_01_neural_network_with_one_hidden_layer.png" >  
 各ActivationNodeの値は以下で求められる  
 <img src="../../img/04_01_value_of_activation_nodes.png" >  
-つまり この例では 各ActivationNodeは 3*4の行列パラメタで求められる  
-// よく分かってない...<img src="https://latex.codecogs.com/gif.latex?a_{1}^{(2)},&space;a_{2}^{(2)},&space;a_{3}^{(2)}" title="a_{1}^{(2)}, a_{2}^{(2)}, a_{3}^{(2)}" />の3行  
-// 各行は<img src="https://latex.codecogs.com/gif.latex?\Theta_{10}^{(1)}x_{0}&plus;...&plus;\Theta_{13}^{(1)}x_{3}" title="\Theta_{10}^{(1)}x_{0}+...+\Theta_{13}^{(1)}x_{3}" />  
-// つまり入力(BiasUnitがあることに注意)・パラメタ積の和で求められるという話?
+また この例では ActivationNodeのパラメタ(Θ)は3*4の行列  
+// Rows=3は<img src="https://latex.codecogs.com/gif.latex?\Theta_{10}^{(1)},&space;\Theta_{20}^{(1)},&space;\Theta_{30}^{(1)}" title="\Theta_{10}^{(1)},&space;\Theta_{20}^{(1)},&space;\Theta_{30}^{(1)}" />の各行  
+// Columns=4は<img src="https://latex.codecogs.com/gif.latex?\Theta_{10}^{(1)},&space;\Theta_{11}^{(1)},&space;\Theta_{12}^{(1)},&space;\Theta_{13}^{(1)}" title="\Theta_{10}^{(1)},&space;\Theta_{11}^{(1)},&space;\Theta_{12}^{(1)},&space;\Theta_{13}^{(1)}" />の各列  
 
 これを一般化すると jレイヤに<img src="https://latex.codecogs.com/gif.latex?s_{j}" title="s_{j}" />ユニットがあり j+1レイヤに<img src="https://latex.codecogs.com/gif.latex?s_{j+1}" title="s_{j+1}" />ユニットがあるとき  
 <img src="https://latex.codecogs.com/gif.latex?\Theta^{j}" title="\Theta^{j}" />の行列は <img src="https://latex.codecogs.com/gif.latex?s_{j+1}" title="s_{j+1}" /> * (<img src="https://latex.codecogs.com/gif.latex?s_{j}" title="s_{j}" />+1) となる ということ  
