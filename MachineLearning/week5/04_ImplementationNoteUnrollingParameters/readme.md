@@ -5,11 +5,11 @@ Octave実装について unrollとresphare を扱う
 ## Octaveのunrollとresphare
 fminunc関数などのAdnvancedOptimizationでは  
 引数や戻り値がベクトル(≠行列)形式の必要がある  
-<img src="../../img/05_04_advanced_optimization_in_neural_network.png" >  
+<img src="../../img/05_04_advanced_optimization_in_neural_network.png" width=50% >  
 NeuralNetworkでは thetaやgradientが上記のような行列形式である  
 
 そのため thetaやgradientはunroll(展開?)し ベクトルにする必要がある  
-Octaveでは以下で 行列 -> ベクトル の変換ができる
+Octaveでは以下で 行列 -> ベクトル の変換ができる  
 <img src="../../img/05_04_matrix_to_vector.png" >  
 
 また 以下で ベクトル -> 行列 の変換ができる  
