@@ -7,7 +7,7 @@ Backpropagationでパラメタを求める際
 ## Gradient Checkingとはなにか
 Gradient Checkingとは Backpropagationで求めたGradientと  
 別の方法で求めたGradientを比較し 近い値であることを確認することで  
-間違いなくGradientが求められてることを確認すること を指す  
+Backpropagationにバグがないことを確認すること を指す  
 
 ## Gradient Checkingの使い方
 ここでは 以下の方法で おおよそのGradientを求めることを考える  
