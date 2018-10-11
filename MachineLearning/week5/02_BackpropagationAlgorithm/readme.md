@@ -4,9 +4,9 @@ BackpropagationAlgorithmについて扱う
 
 ## NeuralNetworkで最適なパラメタ(θ)を求めるには
 最適なパラメタ(θ)を求めるためにはNeuralNetworkでも  
-LogisticRegressionやLinearRegressionと同様 J(Θ)を最小化すれば良い  
+LinearRegressionやLogisticRegressionと同様 J(Θ)を最小化すれば良い  
 <img src="../../img/05_02_gradient_computation_of_neural_network.png" width=50% >  
-J(Θ)を最小化するためには LogisticRegressionやLinearRegression同様  
+J(Θ)を最小化するためには LinearRegressionやLogisticRegression同様  
 <img src="https://latex.codecogs.com/gif.latex?\frac{\partial}{\partial\Theta^{(l)}_{ij}}&space;J(\Theta)" title="\frac{\partial}{\partial\Theta^{(l)}_{ij}} J(\Theta)" />を求める必要がある  
 これを求めるためにBackpropagationを用いる
 
