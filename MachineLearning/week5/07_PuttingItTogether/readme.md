@@ -24,7 +24,7 @@ HiddenLayer(もUnit数も?)は より多い方が
 1. Backpropagationで偏微分を求める
 1. GradientCheckingでBackpropagation(BP)で求めた値が妥当か確認する  
   確認できたらGradientCheckingは無効にする  
-1. GradientDescent または Built-inのOptimizationFunction で
+1. GradientDescent または Built-inのOptimizationFunction で  
   θ(weight)を使ったCostFunctionを最小化する  
 
 FP/BP実行時は以下のようなforループで全トレーニングセットへ適用する  
