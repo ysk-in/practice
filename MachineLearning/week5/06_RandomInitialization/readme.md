@@ -1,4 +1,4 @@
-# Random Initializationの方法やり方
+# Random Initialization
 NeuralNetworkのInitialThetaについて扱う  
 
 ## NeuralNetworkのInitialTheta
