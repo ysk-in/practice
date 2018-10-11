@@ -11,12 +11,13 @@ Gradient Checkingとは Backpropagationで求めたGradientと
 
 ## Gradient Checkingの使い方
 ここでは 以下の方法で おおよそのGradientを求めることを考える  
-<img src="../../img/05_05_numerical_estimation_of_gradient.png" width=60%　>  
+<img src="../../img/05_05_numerical_estimation_of_gradient.png" width=60%　>    
+θに適当な小さな数ε(<img src="https://latex.codecogs.com/gif.latex?10^{-4}" title="10^{-4}" />位が適当らしい)を足し引きした2点について傾きを求める方法  
+
 これは以下の式に相当  
 <img src="../../img/05_05_grad_approx.png" >  
-εは<img src="https://latex.codecogs.com/gif.latex?10^{-4}" title="10^{-4}" />くらいの値が適切らしい
 
-θjについては以下の式で表すことができる  
+θjについては以下となる  
 <img src="../../img/05_05_grad_approx_of_theta_j.png" >
 
 Octaveで実装すると以下  
