@@ -9,6 +9,7 @@ x軸を仮説の次数 y軸をCostとする2次元グラフに 以下をプロ�
 
 <img src="../../img/06_03_diagnosing_bias_vs_variance.png" >  
 このグラフから以下の通り判別できる  
+
 * TrainingSetのCostが高く CrossValidationのCostも高い場合 UnderFitting  
   予測値と実測値の差異が大きいので フィットできていない  
 * TrainingSetのCostが低く CrossValidationのCostが高い場合 OverFitting  
