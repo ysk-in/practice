@@ -5,7 +5,7 @@
 一から十次関数のモデルで どれが妥当か考える場合  
 <img src="../../img/06_02_mdoel_selection.png" width=50% >    
 まず TrainingSetを使い それぞれのモデルにおいての  
-パラメタ(<img src="https://latex.codecogs.com/gif.latex?\Theta^{(1)},&space;\Theta^{(2)},&space;...,&space;\Theta^{(10)}" title="\Theta^{(1)}, \Theta^{(2)}, ..., \Theta^{(10)}" />を求める  
+パラメタ(<img src="https://latex.codecogs.com/gif.latex?\Theta^{(1)},&space;\Theta^{(2)},&space;...,&space;\Theta^{(10)}" title="\Theta^{(1)}, \Theta^{(2)}, ..., \Theta^{(10)}" />)を求める  
 次に 求めたパラメタを適用した仮説で TestSetにおいての差異を求め  
 差異が最小になるモデルを選ぶことで 妥当な次数を選択できる  
 
