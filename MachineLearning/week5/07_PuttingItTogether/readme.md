@@ -1,4 +1,5 @@
 # Putting It Together
+https://www.coursera.org/learn/machine-learning/lecture/Wh6s3/putting-it-together  
 学んできたことを使い NeuralNetworkをどう実装したら良いか その全体について扱う  
 
 ## NeuralNetworkのArchitecture

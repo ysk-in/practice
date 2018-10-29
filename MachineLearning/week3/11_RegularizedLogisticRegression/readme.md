@@ -1,4 +1,5 @@
 # Regularized Logistic Regression
+https://www.coursera.org/learn/machine-learning/lecture/4BHEy/regularized-logistic-regression  
 LogisticRegressionをRegularizedする方法について扱う  
 
 ## LogisticRegressionのRegularization

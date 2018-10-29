@@ -1,4 +1,5 @@
 # Gradient Descent in Practice II - Learning Rate
+https://www.coursera.org/learn/machine-learning/lecture/3iawu/gradient-descent-in-practice-ii-learning-rate  
 Gradient Descentをより早く収束させるための手法 その2  
 α(LearningRate/学習率)をどのように選択すれば良いかを学ぶ
 

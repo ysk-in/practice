@@ -1,4 +1,5 @@
 # Error Analysis
+https://www.coursera.org/learn/machine-learning/lecture/x62iE/error-analysis  
 MachineLearningの課題に取り組むとき どのように始め 進めて行けば良いか という話  
 
 ## MachineLearningの始め方・進め方

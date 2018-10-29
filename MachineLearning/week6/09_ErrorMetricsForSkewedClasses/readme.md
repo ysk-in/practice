@@ -1,4 +1,5 @@
 # Error Metrics for Skewed Classes
+https://www.coursera.org/learn/machine-learning/lecture/tKMWX/error-metrics-for-skewed-classes  
 前出の通り FeatureやアルゴリズムなどMachineLearningの精度を上げるためには
 エラー分析やエラーメトリクス(どれだけ正確に予測できているかの実数値の評価指標)が重要  
 ここではエラーメトリクスについて扱う  

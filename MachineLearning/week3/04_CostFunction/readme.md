@@ -1,4 +1,5 @@
 # Cost Function
+https://www.coursera.org/learn/machine-learning/lecture/1XG8G/cost-function  
 LogisticRegressionで用いるCostFunctionについて扱う  
 
 ## LinearRegressionで用いたCostFunction適用を考える

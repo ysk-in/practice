@@ -1,4 +1,5 @@
 # Gradient Checking
+https://www.coursera.org/learn/machine-learning/lecture/Y3s6r/gradient-checking  
 Backpropagationでパラメタを求める際  
 不当なGradient(微分係数=D)を導き出すバグを作り込み易い(らしい)  
 

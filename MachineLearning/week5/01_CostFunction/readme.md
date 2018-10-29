@@ -1,4 +1,5 @@
 # Cost Function
+https://www.coursera.org/learn/machine-learning/lecture/na28E/cost-function  
 ニューラルネットワークのパラメタをフィッティングするため  
 まずはCostFunctionについて扱う  
 

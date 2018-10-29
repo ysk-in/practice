@@ -1,4 +1,5 @@
 # Learning Curves
+https://www.coursera.org/learn/machine-learning/lecture/Kont7/learning-curves  
 LearningCurvesの考え方について扱う  
 
 ## LearningCurvesと学習データ量(数)

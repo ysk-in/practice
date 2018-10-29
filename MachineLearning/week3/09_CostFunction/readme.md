@@ -1,4 +1,5 @@
 # Cost Function
+https://www.coursera.org/learn/machine-learning/lecture/B1MnL/cost-function  
 Overfittingに対策するためのRegularizationについて考える  
 そのために RegularizedなCostFunctionについて扱う  
 // 今回 あまり理解できていないかも...

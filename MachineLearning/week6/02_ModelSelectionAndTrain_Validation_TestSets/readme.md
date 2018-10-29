@@ -1,4 +1,5 @@
 # Model Selection and Train/Validation/Test Sets
+https://www.coursera.org/learn/machine-learning/lecture/QGKbr/model-selection-and-train-validation-test-sets  
 妥当な次数の求め方について扱う  
 
 ## モデル(次数)選び の考え方

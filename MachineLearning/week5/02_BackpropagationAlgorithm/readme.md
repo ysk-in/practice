@@ -1,4 +1,5 @@
 # Backpropagation Algorithm
+https://www.coursera.org/learn/machine-learning/lecture/1z9WW/backpropagation-algorithm  
 NeuralNetworkのCostFunctionを最小化する  
 BackpropagationAlgorithmについて扱う  
 

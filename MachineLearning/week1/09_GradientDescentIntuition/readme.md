@@ -1,4 +1,5 @@
 # Gradient Descent Intuition
+https://www.coursera.org/learn/machine-learning/lecture/GFFPB/gradient-descent-intuition  
 Gradient Descent(最急降下法)の理解を深める  
 
 ## Gradient Descentの考え方(単純な関数について考える)

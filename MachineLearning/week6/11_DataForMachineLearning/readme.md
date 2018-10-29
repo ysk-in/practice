@@ -1,4 +1,5 @@
 # Data For Machine Learning
+https://www.coursera.org/learn/machine-learning/lecture/XcNcz/data-for-machine-learning  
 MachineLearningとデータ量について扱う  
 
 ## TrainingSet(Data)SizeとAccuracyの関係

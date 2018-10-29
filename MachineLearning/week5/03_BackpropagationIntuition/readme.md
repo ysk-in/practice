@@ -1,4 +1,5 @@
 # Backpropagation Intuition
+https://www.coursera.org/learn/machine-learning/lecture/du981/backpropagation-intuition  
 前出の 難しいBackpropagationの理解を進めるための より簡単な説明  
 Backpropagationを詳細に理解することは難しいという認識で問題はないっぽい  
 

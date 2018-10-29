@@ -1,4 +1,5 @@
 # Normal Equation Noninvertibility
+https://www.coursera.org/learn/machine-learning/lecture/zSiE6/normal-equation-noninvertibility  
 非可逆行列(逆行列が存在しない行列)の正規方程式について  
 
 ## 非可逆行列の正規方程式について

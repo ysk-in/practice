@@ -1,4 +1,5 @@
 # Multiclass Classification: One-vs-all
+https://www.coursera.org/learn/machine-learning/lecture/68Pol/multiclass-classification-one-vs-all  
 Multiclass Classificationについて扱う  
 
 Multiclass Classificationとは分類(y)を0/1だけでなく  

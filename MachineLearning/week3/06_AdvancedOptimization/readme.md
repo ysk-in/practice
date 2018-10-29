@@ -1,4 +1,5 @@
 # Advanced Optimization
+https://www.coursera.org/learn/machine-learning/lecture/licwf/advanced-optimization  
 LogisticRegressionのより洗練されたCostFunctionについて扱う
 
 ## Advanced Optimizationについて

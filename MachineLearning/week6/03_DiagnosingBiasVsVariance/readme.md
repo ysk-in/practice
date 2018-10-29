@@ -1,4 +1,5 @@
 # Diagnosing Bias vs. Variance
+https://www.coursera.org/learn/machine-learning/lecture/yCAup/diagnosing-bias-vs-variance  
 仮説が良い予測をできないとき Under/Over Fitting が発生していると考えられる  
 Costを使い どちらか判別する方法について扱う  
 

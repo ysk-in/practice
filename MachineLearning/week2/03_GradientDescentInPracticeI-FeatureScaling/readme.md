@@ -1,4 +1,5 @@
 # Gradient Descent in Practice I - Feature Scaling
+https://www.coursera.org/learn/machine-learning/lecture/xx3Da/gradient-descent-in-practice-i-feature-scaling  
 Gradient Descentをより早く収束させるための手法 その1  
 Feature Scalingについて学ぶ
 

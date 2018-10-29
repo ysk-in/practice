@@ -1,4 +1,5 @@
 # Classification(分類)
+https://www.coursera.org/learn/machine-learning/lecture/wlPeP/classification  
 ここからはClassification(分類)について扱う  
 
 ## Classificationで用いる仮説

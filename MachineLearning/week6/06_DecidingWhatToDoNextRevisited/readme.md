@@ -1,4 +1,5 @@
 # Deciding What to Do Next Revisited
+https://www.coursera.org/learn/machine-learning/lecture/zJTzp/deciding-what-to-do-next-revisited  
 仮説を改善するための方法についてまとめる  
 
 ## 仮説の改善方法 まとめ

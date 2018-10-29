@@ -1,4 +1,5 @@
 # Large Margin Intuition
+https://www.coursera.org/learn/machine-learning/lecture/wrjaS/large-margin-intuition  
 ClassifierのMarginについて扱う  
 
 ## Marginとはなにか

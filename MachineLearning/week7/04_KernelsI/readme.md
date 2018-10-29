@@ -1,4 +1,5 @@
 # Kernels I
+https://www.coursera.org/learn/machine-learning/lecture/YOMHn/kernels-i  
 SVMで複雑な非線形の分類するときに用いられているKernelsの考え方について扱う  
 
 ## Kernelsの考え方

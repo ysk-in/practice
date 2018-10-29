@@ -1,6 +1,7 @@
 # 教師あり学習(SupervisedLearning)
+https://www.coursera.org/learn/machine-learning/lecture/1VkCb/supervised-learning  
 アルゴリズムに与えたデータセットに正しい答えが与えられるもの  
-以下２つに分類
+以下２つに分類  
 
 ## Regression(回帰)  
   連続値の予測  

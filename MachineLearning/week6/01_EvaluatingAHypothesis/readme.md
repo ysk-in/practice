@@ -1,4 +1,5 @@
 # Evaluating a Hypothesis
+https://www.coursera.org/learn/machine-learning/lecture/yfbJY/evaluating-a-hypothesis  
 仮説の評価について扱う  
 
 ## 仮説の評価がなぜ必要か

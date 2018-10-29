@@ -1,4 +1,5 @@
 # Examples and Intuitions II
+https://www.coursera.org/learn/machine-learning/lecture/solUx/examples-and-intuitions-ii  
 具体例を用いてニューラルネットワークを直感的に分かるようにする  
 
 ## ニューラルネットワークの具体例 XNOR

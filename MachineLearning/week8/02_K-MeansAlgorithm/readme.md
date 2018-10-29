@@ -1,4 +1,5 @@
 # K-Means Algorithm
+https://www.coursera.org/learn/machine-learning/lecture/93VPG/k-means-algorithm  
 ClusteringアルゴリズムのK-Meansについてあつかう  
 
 ## K-MeansのClusteringの考え方

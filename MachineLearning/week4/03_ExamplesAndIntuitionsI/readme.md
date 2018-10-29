@@ -1,4 +1,5 @@
 # Examples and Intuitions I
+https://www.coursera.org/learn/machine-learning/lecture/rBZmG/examples-and-intuitions-i  
 具体例を用いてニューラルネットワークを直感的に分かるようにする  
 
 ## ニューラルネットワークの具体例 AND

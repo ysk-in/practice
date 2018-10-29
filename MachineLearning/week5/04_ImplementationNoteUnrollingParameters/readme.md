@@ -1,4 +1,5 @@
 # Implementation Note: Unrolling Parameters
+https://www.coursera.org/learn/machine-learning/lecture/60Uxp/implementation-note-unrolling-parameters  
 NeuralNetworkでAdvancedOptimizationを使用する場合の  
 Octave実装について unrollとresphare を扱う  
 

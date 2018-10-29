@@ -1,4 +1,5 @@
 # Model Representation II
+https://www.coursera.org/learn/machine-learning/lecture/Hw3VK/model-representation-ii  
 ニューラルネットワークのベクトル化について扱う  
 
 ## ニューラルネットワークのベクトル化

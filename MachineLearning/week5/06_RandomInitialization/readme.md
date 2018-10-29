@@ -1,4 +1,5 @@
 # Random Initialization
+https://www.coursera.org/learn/machine-learning/lecture/ND5G5/random-initialization  
 NeuralNetworkのInitialThetaについて扱う  
 
 ## NeuralNetworkのInitialTheta

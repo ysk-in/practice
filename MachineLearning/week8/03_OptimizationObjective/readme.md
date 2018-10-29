@@ -1,4 +1,5 @@
 # Optimization Objective
+https://www.coursera.org/learn/machine-learning/lecture/G6QWt/optimization-objective  
 K-Meansの OptimizationObjective(=CostFunction?)について扱う  
 
 OptimizationObjectiveを知ることで以下に役立つ

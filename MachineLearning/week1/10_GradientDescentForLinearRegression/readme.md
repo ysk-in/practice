@@ -1,4 +1,5 @@
 # Gradient Descent For Linear Regression
+https://www.coursera.org/learn/machine-learning/lecture/kCvQc/gradient-descent-for-linear-regression  
 LinearRegression(線形回帰)の場合  
 GradientDescent(最急降下法)の新しい方程式が導き出される  
 

@@ -1,6 +1,6 @@
 # Choosing the Number of Clusters
-Cluster数(K)の決め方について扱う  
 https://www.coursera.org/learn/machine-learning/lecture/Ks0E9/choosing-the-number-of-clusters  
+Cluster数(K)の決め方について扱う  
 
 ## K-MeansのClusterの数の決め方
 Cluster数を決める ベストなやり方/自動選択 は存在しない  

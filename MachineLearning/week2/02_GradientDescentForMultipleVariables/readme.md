@@ -1,4 +1,5 @@
 # Gradient Descent for Multiple Variables
+https://www.coursera.org/learn/machine-learning/lecture/Z9DKX/gradient-descent-for-multiple-variables  
 Gradient Descent(最急降下法)について  
 複数のパラメタ・変数を持つ仮説の場合を考える
 

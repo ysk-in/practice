@@ -1,4 +1,5 @@
 # Regularization and Bias/Variance
+https://www.coursera.org/learn/machine-learning/lecture/4VDlf/regularization-and-bias-variance  
 Regularizationと Bias(UnderFitting) Variance(OverFitting) の関係について扱う  
 
 ## Regularizationと Under/Over Fittingの関係

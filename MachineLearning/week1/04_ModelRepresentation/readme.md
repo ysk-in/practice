@@ -1,4 +1,5 @@
 # Model Representation
+https://www.coursera.org/learn/machine-learning/lecture/db3jS/model-representation  
 
 ## LinearRegression(線形回帰)
 * 教師あり学習  

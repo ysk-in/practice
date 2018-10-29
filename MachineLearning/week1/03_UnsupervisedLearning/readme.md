@@ -1,4 +1,5 @@
 # 教師なし学習(UnsupervisedLearning)
+https://www.coursera.org/learn/machine-learning/lecture/olRZo/unsupervised-learning  
 (アルゴリズムに与える)データセットに正解が示されていないもの  
 また何をすべきかの指定もないもの  
 与えられたデータセットをクラスタリング(集合を分割して部分集合を見出す)  

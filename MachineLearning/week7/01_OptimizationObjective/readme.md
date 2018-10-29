@@ -1,4 +1,5 @@
 # Optimization Objective
+https://www.coursera.org/learn/machine-learning/lecture/sHfVT/optimization-objective  
 ここから新しいアルゴリズムSupportVectorMachines(SVM)を扱う  
 今回は特にCostFunctionを扱う  
 

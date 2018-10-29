@@ -1,4 +1,5 @@
 # Using An SVM
+https://www.coursera.org/learn/machine-learning/lecture/sKQoJ/using-an-svm  
 SVMを実践するときの留意事項  
 
 ## SVMを実装するときのNote

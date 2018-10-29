@@ -1,4 +1,5 @@
 # Random Initialization
+https://www.coursera.org/learn/machine-learning/lecture/drcBh/random-initialization  
 K-MeansのClusterCentroid初期化の仕方について扱う  
 
 ## ClusterCentroid初期化の仕方

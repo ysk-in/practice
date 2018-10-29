@@ -1,4 +1,5 @@
 # Prioritizing What to Work On
+https://www.coursera.org/learn/machine-learning/lecture/4h5X4/prioritizing-what-to-work-on  
 MachineLearningを実際に使っていくとき 精度を上げるため どのように進めれば良いか  
 ここでは特に なにに時間を費やすべきか(プライオリティ)の考え方について扱う  
 

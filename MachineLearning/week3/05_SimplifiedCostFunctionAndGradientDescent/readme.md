@@ -1,4 +1,5 @@
 # Simplified Cost Function and Gradient Descent
+https://www.coursera.org/learn/machine-learning/lecture/MtEaZ/simplified-cost-function-and-gradient-descent  
 LogisticRegressionのCostFunctionをシンプルに表現する方法と  
 LogisticRegressionのCostFunctionにGradientDescentを適用する方法について扱う  
 

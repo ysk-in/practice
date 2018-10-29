@@ -1,4 +1,5 @@
 # Hypothesis Representation
+https://www.coursera.org/learn/machine-learning/lecture/RJXfB/hypothesis-representation  
 LogisticRegressionの仮説の表現方法について扱う  
 
 ## Hypothesis Representation of Logistic Regression

@@ -1,4 +1,5 @@
 # Normal Equation(正規方程式)
+https://www.coursera.org/learn/machine-learning/lecture/2DKxQ/normal-equation  
 最適なパラメタを求めるのに使用可能な方法の1つ  
 既に出てきたパラメタを求める方法Gradient Descentと比較しながら学ぶ  
 

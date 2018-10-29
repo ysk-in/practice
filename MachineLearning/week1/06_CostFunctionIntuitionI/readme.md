@@ -1,4 +1,5 @@
 # Cost Function Ⅰ
+https://www.coursera.org/learn/machine-learning/lecture/N09c6/cost-function-intuition-i  
 線形回帰の目的関数の詳細説明1(単純な仮説関数について考える)
 
 ## 線形回帰の考え方

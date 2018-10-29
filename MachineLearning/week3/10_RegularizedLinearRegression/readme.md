@@ -1,4 +1,5 @@
 # Regularized Linear Regression
+https://www.coursera.org/learn/machine-learning/lecture/QrMXd/regularized-linear-regression  
 LinearRegressionをRegularizedするための考え方について扱う  
 
 ## LinearRegressionをGradientDescentでFittingするときのRegularization

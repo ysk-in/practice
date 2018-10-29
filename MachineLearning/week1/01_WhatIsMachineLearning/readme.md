@@ -1,5 +1,6 @@
 # マシンラーニングとは何か
-ここでは２つの定義が挙げられていた
+https://www.coursera.org/learn/machine-learning/lecture/Ujm7v/what-is-machine-learning  
+ここでは２つの定義が挙げられていた  
 
 ## アーサー・サミュエル提唱  
   コンピュータに明示的にプログラムすることなく学習する能力を与えること

@@ -1,4 +1,5 @@
 # Model Representation I
+https://www.coursera.org/learn/machine-learning/lecture/ka3jK/model-representation-i  
 ニューラルネットワークについて扱う  
 ここではニューラルネットワークの表現について扱う  
 

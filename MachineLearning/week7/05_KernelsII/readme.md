@@ -1,4 +1,5 @@
 # Kernels II
+https://www.coursera.org/learn/machine-learning/lecture/hxdcH/kernels-ii  
 続けてKernelsについて扱う  
 今回は特に実践でどのように使用するかと Bias-VarianceのTradeOffについて扱う  
 // 日本語字幕がないため理解があやしい...  

@@ -1,4 +1,5 @@
 # Cost Function Ⅱ
+https://www.coursera.org/learn/machine-learning/lecture/nwpe2/cost-function-intuition-ii  
 線形回帰の目的関数の詳細説明2
 
 ## 線形回帰の考え方

@@ -1,4 +1,5 @@
 # Unsupervised Learning: Introduction
+https://www.coursera.org/learn/machine-learning/lecture/czmip/unsupervised-learning-introduction  
 ここからは初めてUnsupervisedLearningについて扱う  
 特にClusteringについて扱う  
 

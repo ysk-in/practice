@@ -1,4 +1,5 @@
 # Gradient Descent(最急降下法)
+https://www.coursera.org/learn/machine-learning/lecture/8SpIM/gradient-descent  
 目的関数を最小化するためのアルゴリズム Gradient Descent(最急降下法)について学ぶ  
 
 ## Gradient Descentの特徴
@@ -33,6 +34,6 @@ Gradient Descentの考え方を関数で表現すると以下
 各軸(θj)の どちらの方向に進めば良いか どの程度進めば良いか が分かる 詳細は次回  
 
 この関数は "Θj := xxx (for j=0 and j1)" とある通りΘ0, Θ1を更新する必要がある  
-// ある時点から 各軸のどの方向に進むべきかは 同じパラメタ(θ)を元に判断する必要があるため 
+// ある時点から 各軸のどの方向に進むべきかは 同じパラメタ(θ)を元に判断する必要があるため
 <img src="../../img/01_08_gradient_descent_algorithm_simultaneous.png" width=50%>  
 左の順序でΘjを求める必要があり 右の順序では駄目だよ ということ

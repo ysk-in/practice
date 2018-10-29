@@ -1,4 +1,6 @@
 # Cost Function(目的関数)
+https://www.coursera.org/learn/machine-learning/lecture/rkTp3/cost-function  
+
 ## 仮説(hypothesis)のパラメタ(Θ0, Θ1)の求め方
 仮説"hΘ(x) = Θ0 + Θ1 * x"の  適切なパラメタ(Θ0, Θ1)をどのように求めるか  
 <img src="../../img/01_05_cost_function.png">  

@@ -1,4 +1,5 @@
 # Trading Off Precision and Recall
+https://www.coursera.org/learn/machine-learning/lecture/CuONQ/trading-off-precision-and-recall  
 SkewedClassの分類で使用するPrecisionとRecallのTradeOffについて扱う  
 
 ## PrecisionとRecallのTraceOffの考え方
