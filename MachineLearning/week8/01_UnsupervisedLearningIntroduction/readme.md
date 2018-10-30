@@ -11,6 +11,6 @@ Clusteringでは 与えられたデータから データのstructure(構造?)�
 データをグルーピングすることができる  
 
 これは例えば以下のようなケースで用いられる  
-<img src="../../img/08_01_applications_of_clustering.png" >  
+<img src="../../img/08_01_applications_of_clustering.png" width=50% >  
 右上のSocialNetworkAnalysisでは人々を同質なグループへクラスタリングする  
 ということに使われるらしい  

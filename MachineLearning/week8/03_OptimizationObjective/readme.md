@@ -2,8 +2,8 @@
 https://www.coursera.org/learn/machine-learning/lecture/G6QWt/optimization-objective  
 K-Meansの OptimizationObjective(=CostFunction?)について扱う  
 
-OptimizationObjectiveを知ることで以下に役立つ
 ## K-MeansのOptimizationObjectiveの考え方
+OptimizationObjectiveを知ることで以下に役立つ  
 * デバッグ  
 * なぜ局所的最小値が回避できるのか理解する(こっちが大事 詳しくは後ほど教えてくれる?)  
 
@@ -11,7 +11,7 @@ OptimizationObjectiveで利用する変数は以下
 * <img src="https://latex.codecogs.com/gif.latex?c^{(i)}" title="c^{(i)}" /> : <img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />がどのクラスタに割り当たっているかトラックするための変数(μのindex)  
 * <img src="https://latex.codecogs.com/gif.latex?\mu_{k}" title="\mu_{k}" /> : index=kのClusterCentroidの場所  
 * <img src="https://latex.codecogs.com/gif.latex?\mu_{c^{(i)}}" title="\mu_{c^{(i)}}" /> : <img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />に割り当たっているクラスタの場所  
-  <img src="https://latex.codecogs.com/gif.latex?c^{(i)}" title="c^{(i)}" /><img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />は割り当たっているクラスタμのindexのため  
+<img src="https://latex.codecogs.com/gif.latex?c^{(i)}" title="c^{(i)}" /><img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />は割り当たっているクラスタμのindexのため  
 
 OptimizationObjectiveは以下  
 <img src="../../img/08_03_kmeans_optimization_objective.png" >  
@@ -19,7 +19,7 @@ OptimizationObjectiveは以下
 DistortionFunctionとも呼ぶ  
 
 ## K-MeansのOptimizationObjectiveのAlgorithm
-Alogirthmは以下  
+Algorithmは以下  
 <img src="../../img/08_03_kmeans_algorithm.png" >  
 1. K個のClusterCentroidをランダム初期化する  
 1. (収束するまで?)以下を繰り返す  

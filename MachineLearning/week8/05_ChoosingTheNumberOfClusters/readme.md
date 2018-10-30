@@ -15,7 +15,7 @@ Kは手動で決める必要がある
 ## Elbow Method
 Kの決め方ElbowMethodは以下の通り  
 KとCostの関係を求め Cost減少が緩やかになり始めのK(以下では3)を採用する方法  
-<img src="../../img/08_05_elbow_method.png" >  
+<img src="../../img/08_05_elbow_method.png" width=50% >  
 ただ 右のように Kを増やすと Costが緩やかに下がり続ける傾向を示すケースが多く  
 実際にはこれでKを決められるケースは多くないらしい  
 // ちなみに Kを増やせばCostは減るはずで もし減らない場合  
@@ -26,7 +26,7 @@ KとCostの関係を求め Cost減少が緩やかになり始めのK(以下で�
 K-Meansで得た結果を何の目的で使うか この目的に沿いKを決める方法  
 例えば 身長・体重からTシャツのサイズを分類する をK-MeansでClusteringする場合  
 以下の通りKは 3 or 5 にすることが考えられる  
-<img src="../../img/08_05_k_based_on_purpose.png" >  
+<img src="../../img/08_05_k_based_on_purpose.png" width=50% >  
 つまり ここでK-Meansの目的は Tシャツのサイズ や  
 生産量(場合によってはそのサイズは生産しない) を決めことが目的で  
 それを3つに分類(S, M, L)したいならK=3にすべきだし  
