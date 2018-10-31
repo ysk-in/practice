@@ -4,8 +4,8 @@ DimensionalityReductionしたzから元のxを復元する方法について扱�
 
 ## 次元を復元する方法
 <img src="https://latex.codecogs.com/gif.latex?z^{(i)}&space;=&space;U_{reduce}^{T}&space;\times&space;x^{(i)}" title="z^{(i)} = U_{reduce}^{T} \times x^{(i)}" /> は  
-`k*n行列 * n*1行列` により `k*1行列`を求めることで次元削減するのだった  
+`k*1行列`にするため`k*n行列 * n*1行列`により 次元削減するのだった  
 なので 次元を復元したいのであれば  
-`n*k行列 * k*1行列` により `n*1行列`を求めることで元の次元を復元できる つまり  
-<img src="https://latex.codecogs.com/gif.latex?x_{approx}^{(i)}&space;=&space;U_{reduce}&space;\times&space;z^{(i)}" title="x_{approx}^{(i)} = U_{reduce} \times z^{(i)}" />で求められる
+`n*1行列`にするため`n*k行列 * k*1行列`により次元を復元すれば良い つまり  
+<img src="https://latex.codecogs.com/gif.latex?x_{approx}^{(i)}&space;=&space;U_{reduce}&space;\times&space;z^{(i)}" title="x_{approx}^{(i)} = U_{reduce} \times z^{(i)}" />すれば良い  
 <img src="../../img/08_10_reconstruction_from_compressed_representation.png" width=50% >  
