@@ -16,17 +16,17 @@ PCAを実行する前にData(Feature)の前準備を行う必要がある
 そのためには まず共分散行列(convariance matrix)を求める必要がある  
 // 共分散行列がなんなのか分からない...  
 // 実装する上では理解できなくても出来るっぽいのでひとまず理解は後回しにする  
-ConvarianceMatrixはΣで表され n * nの行列  
+ConvarianceMatrixはΣで表され `n*n行列`  
 // 総和を示す記号と被るけど どちらを意味するかは文脈から分かる  
 ConvarianceMatrixで求めた値(Sigma)を用いてeigenvectorsをsvd関数により求める  
 // eigenvectorsもなんなのか理解できていない...  
 <img src="../../img/08_09_pca_procedure1.png" width=50% >  
 求めたいeigenvectorsは第1戻り値(U)に設定されている  
-UはSigmaと同じ n * nの行列  
+UはSigmaと同じ`n*n行列`  
 
 zはUを使用し以下の通り求められる  
 <img src="../../img/08_09_pca_procedure2.png" width=50% >  
-Uの先頭から求めたい次元数(k)分 取り出す これを<img src="https://latex.codecogs.com/gif.latex?U_{reduce}" title="U_{reduce}" />とする  
+Uの先頭から求めたい次元数(k)分Columnを取り出す これを<img src="https://latex.codecogs.com/gif.latex?U_{reduce}" title="U_{reduce}" />とする  
 これにx^(i)を掛ければz^(i)は求められる  
 // らしい...今回なぜなのか理解できていない  
 この方法で求めると zはkベクトルが求められており 意図通りの次元数になる  
