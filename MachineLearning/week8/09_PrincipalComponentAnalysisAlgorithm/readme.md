@@ -26,10 +26,11 @@ UはSigmaと同じ n * nの行列
 
 zはUを使用し以下の通り求められる  
 <img src="../../img/08_09_pca_procedure2.png" width=50% >  
-求めたい次元数(k)分 Uの先頭から取り出し これにx^(i)を掛ければz^(i)は求められる  
+Uの先頭から求めたい次元数(k)分 取り出す これを<img src="https://latex.codecogs.com/gif.latex?U_{reduce}" title="U_{reduce}" />とする  
+これにx^(i)を掛ければz^(i)は求められる  
 // らしい...今回なぜなのか理解できていない  
 この方法で求めると zはkベクトルが求められており 意図通りの次元数になる  
 
 ## PCAの実装方法
+このアルゴリズムをOctaveで実装すると以下  
 <img src="../../img/08_09_pca_procedure_summary.png" width=50% >  
-<img src="https://latex.codecogs.com/gif.latex?U_{reduce}" title="U_{reduce}" />は先頭からk個を取り出したUを指す  

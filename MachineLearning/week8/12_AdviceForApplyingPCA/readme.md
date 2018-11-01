@@ -5,8 +5,8 @@ PCAを実践でどのように使用すべきかについて扱う
 ## PCA用途 学習の高速化
 PCAの主な用途が学習の高速化のため  
 例えば`100pixel*100pixel`画像の場合Featureは10,000になり 学習に時間がかかる  
-このFeatureにPCAを適用することでFeatureを例えば1,000に減らせることが期待でき  
-Featureが減らせれば学習の高速化が見込める  
+このFeatureにPCAを適用することでFeatureを例えば1,000に減らせることが期待できる  
+Featureが減れば 学習の高速化が見込める  
 <img src="../../img/08_12_supervised_learning_speedup.png" width=50% >  
 PCAを適用し学習するためには TrainingSetからxだけを取り出し(yは取り出さない)  
 これをPCAに指定しzを得て このzとオリジナルのyを用いて学習すれば良い  

@@ -11,7 +11,7 @@ OptimizationObjectiveで利用する変数は以下
 * <img src="https://latex.codecogs.com/gif.latex?c^{(i)}" title="c^{(i)}" /> : <img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />がどのクラスタに割り当たっているかトラックするための変数(μのindex)  
 * <img src="https://latex.codecogs.com/gif.latex?\mu_{k}" title="\mu_{k}" /> : index=kのClusterCentroidの場所  
 * <img src="https://latex.codecogs.com/gif.latex?\mu_{c^{(i)}}" title="\mu_{c^{(i)}}" /> : <img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />に割り当たっているクラスタの場所  
-<img src="https://latex.codecogs.com/gif.latex?c^{(i)}" title="c^{(i)}" /><img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />は割り当たっているクラスタμのindexのため  
+<img src="https://latex.codecogs.com/gif.latex?c^{(i)}" title="c^{(i)}" />は<img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" />に割り当たっているクラスタμのindexのため  
 
 OptimizationObjectiveは以下  
 <img src="../../img/08_03_kmeans_optimization_objective.png" >  

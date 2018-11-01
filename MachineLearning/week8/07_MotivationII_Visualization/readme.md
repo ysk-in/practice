@@ -1,9 +1,10 @@
 # Motivation II: Visualization
 https://www.coursera.org/learn/machine-learning/lecture/t6pYD/motivation-ii-visualization  
-DataのVisualizationについて扱う  
+DimensionalityReductionの利用目的として DataのVisualizationについて扱う  
 
 ## Visualizationの方法
-以下のようにFeatures数が50など多い場合 Dataを可視化(グラフにプロット)できない  
+Features数が50など多い場合  
+グラフで表現できるのは2D/3Dのため Dataの可視化(グラフにプロット)が出来ない  
 <img src="../../img/08_07_many_features.png" width=50% >  
 
 DimensionalityReductionを用いてFeatures数を 2 or 3 に削減することで  

@@ -9,3 +9,5 @@ DimensionalityReductionしたzから元のxを復元する方法について扱�
 `n*1行列`にするため`n*k行列 * k*1行列`により次元を復元すれば良い つまり  
 <img src="https://latex.codecogs.com/gif.latex?x_{approx}^{(i)}&space;=&space;U_{reduce}&space;\times&space;z^{(i)}" title="x_{approx}^{(i)} = U_{reduce} \times z^{(i)}" />すれば良い  
 <img src="../../img/08_10_reconstruction_from_compressed_representation.png" width=50% >  
+ちなみに <img src="https://latex.codecogs.com/gif.latex?x_{approx}" title="x_{approx}" />は次元削減のために載せた 直線/平面など 上の要素を指すため  
+元のxとは異なる値になることがある(左グラフの× でなく 右グラフの× を指す値)  
