@@ -17,12 +17,13 @@ AnomalyDetectionするためには
 密集度が低い場合は低い値を示す モデルp(x) があれば良い  
 <img src="../../img/09_01_density_estimation.png" width=50% >  
 TestSet(<img src="https://latex.codecogs.com/gif.latex?x_{test}" title="x_{test}" />)をこのモデルに指定し  
-ある閾値(ε)を下回ればAnomalyと扱うことができる  
+ある閾値(ε)を下回ればAnomalyと見なすことができる  
 
 ## AnomalyDetectionを使用例
 AnomalyDetectionは以下のようなケースで用いられる  
-* 詐欺の検知: ECサイトで以下Featureを用いてUnusualユーザを検知するのに使う  
+* 詐欺の検知: ECサイトで以下Featureを用いてUnusualユーザを検知  
 		ログイン頻度, 訪問ページ総数, フォーラム投稿数, タイピング速度
 * 製造: 上記で挙げたエンジンのQAのケース
-* Datacenterのモニタリング: 以下に記載のFeatureを用いてDownしそうなものを検知  
+* Datacenterのモニタリング: 以下に記載のFeatureを用いて  
+	Downしそうなものを検知 システム管理者にレビューを依頼  
 <img src="../../img/09_01_anomaly_decetion_example.png" width=50% >  
