@@ -7,8 +7,8 @@ https://www.coursera.org/learn/machine-learning/lecture/Mwrni/developing-and-eva
 AnomalyDetectionでもEvaluation使うことが出来れば 以下を判断する際に有用  
 * どのFeatureを使うか  
 * 閾値(ε)として どの値を適用するか  
-
 <img src="../../img/09_04_importance_of_real_number_evaluation.png" width=50% >  
+
 ラベル(y)付きのDataがあればAnomalyDetectionのEvaluatingが可能  
 // AnomalyDetectionではラベルyを Anomalyなら1 として扱う
 
