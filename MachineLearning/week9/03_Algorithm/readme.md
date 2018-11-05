@@ -22,7 +22,7 @@ AnomalyDetectionのアルゴリズムは以下の通り
 
 ## AnomalyDetectionの例
 以下 赤×のDataSet(x_{1}, x_{2})があるとき  
-パラメタ(分散, √平均=標準偏差)は以下の通り求められる  
+パラメタ(平均, √分散=標準偏差)は以下の通り求められる  
 <img src="../../img/09_03_anomaly_detection_example.png" width=50% >  
 ここに緑×のTestSetが与えられたとき求めたパラメタから p(x_{test})を求められる  
 定めた閾値ε(この値をどう定めれば良いかは後ほど教えていただけるらしい)と比較することで  
