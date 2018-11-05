@@ -6,7 +6,7 @@ AnomalyDetectionが上手く機能するかには Featureの選択が非常に�
 // らしい たしかに Featureの組み合わせからAnomalyか判断するので直感的にもそう思う  
 
 ## Non-GaussianなFeatureの変換
-FeatureをAnomalyDetectionに使う前に 分布をプロットすることは有効 プロット結果が
+FeatureをAnomalyDetectionに使う前に 分布をプロットすることは有効 プロット結果が  
 以下の上段のとき ガウス分布っぽいのでAnomalyDetectionのFeatureとして良さそう  
 下段の左側のとき このままでもAnomalyDetectionは一応できるらしいけれど  
 下段の右側のように変換してから Featureとして使う方が最適らしい  
