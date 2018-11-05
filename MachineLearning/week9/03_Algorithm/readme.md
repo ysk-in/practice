@@ -21,8 +21,9 @@ AnomalyDetectionのアルゴリズムは以下の通り
 1. 求めたパラメタを利用し TestDataについてp(x)を求める  
 
 ## AnomalyDetectionの例
-以下 赤×のDataSet(x_{1}, x_{2})があるとき パラメタ(分散, 平均)は以下の通り求められる  
+以下 赤×のDataSet(x_{1}, x_{2})があるとき  
+パラメタ(分散, √平均=標準偏差)は以下の通り求められる  
+<img src="../../img/09_03_anomaly_detection_example.png" width=50% >  
 ここに緑×のTestSetが与えられたとき求めたパラメタから p(x_{test})を求められる  
 定めた閾値ε(この値をどう定めれば良いかは後ほど教えていただけるらしい)と比較することで  
 対象のTestSetがAnomalyかどうか 決めることが出来る  
-<img src="../../img/09_03_anomaly_detection_example.png" width=50% >  
