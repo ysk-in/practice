@@ -7,6 +7,7 @@ https://www.coursera.org/learn/machine-learning/lecture/Mwrni/developing-and-eva
 AnomalyDetectionでもEvaluation使うことが出来れば 以下を判断する際に有用  
 * どのFeatureを使うか  
 * 閾値(ε)として どの値を適用するか  
+
 <img src="../../img/09_04_importance_of_real_number_evaluation.png" width=50% >  
 ラベル(y)付きのDataがあればAnomalyDetectionのEvaluatingが可能  
 // AnomalyDetectionではラベルyを Anomalyなら1 として扱う
@@ -24,9 +25,9 @@ AnomalyDetectionでもEvaluation使うことが出来れば 以下を判断す�
 
 ## AnomalyDetectionのEvaluationのアルゴリズム
 以下の通り TrainingSetでAnomalyDetectionでパラメタを求め  
-求めたパラメタを使い CV/Test Set でAnomalyDetectionを実際にして ラベルと比べれば良い  
+求めたパラメタを使い CV/Test Set でAnomalyDetectionしてみて ラベルと比べれば良い  
 <img src="../../img/09_04_algorithm_evaluation.png" width=50% >  
 上記の通り AnomalyDetectionは Normal/Good(y=0)が Anomaly(y=1)に比べ  
-非常に多いSkewed(歪んだ)Classes(全部0に分類しちゃえば非常に高いAccuracyになる)
+非常に多いSkewed(歪んだ)Classes(全部0に分類しちゃえば非常に高いAccuracyになる)  
 // SkewedClassesはweek6/09_ErrorMetricsForSkewedClassesで扱ったものと同じ  
 そのため EvaluatingにはPrecision/RecallやF1-scoreを適用し 求める必要がある  
