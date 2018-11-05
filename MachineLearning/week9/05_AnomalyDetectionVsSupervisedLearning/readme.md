@@ -27,5 +27,10 @@ AnomalyDetectionとSupervisedLearningの使い分けについて扱う
 ## 使い分けの具体例
 具体的なケースでは以下の通り使い分ける  
 <img src="../../img/09_05_anomaly_detection_supervised_learning.png" width=50% >  
-Fraud(詐欺)検知 や 製造不良検知 などは 陽性データ多くないため AnomalyDetectionが有効  
-スパムメールの分類などはSupervisedLearningが有効  
+製造で 様々な種類の欠陥があり 少しのDataSetしかないならAnomalyDetectionが適切  
+ただし この場合でもy=1のDataSetがたくさんあればSupervisedLearningの方が適切かも  
+
+変わった動きをするユーザが少ないときにFraud(詐欺)検出したいならAnomalyDetection  
+
+基本的には たくさんのDataSetがあればSupervisedLearningで  
+あんまりないならAnomalyDetection y=1,0のDataSetが同数くらいあればSupervisedLearning  
