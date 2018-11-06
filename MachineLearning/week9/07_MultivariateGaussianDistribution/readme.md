@@ -1,23 +1,22 @@
 # Multivariate Gaussian Distribution
 https://www.coursera.org/learn/machine-learning/lecture/Cf8DF/multivariate-gaussian-distribution  
-MultivariateGaussianDistribution(多変量正規分布)を用いて  
-AnomalyDetectionを拡張することについて扱う  
-MultivariateGaussianDistributionを用いることで より意図に沿うAnomaly検出ができる  
+MultivariateGaussianDistributionを用いたAnomalyDetection拡張について扱う  
+MultivariateGaussianDistributionを用いることで Feature間の相関を考慮できる  
 
 ## MultivariateGaussianDistributionが必要になる理由
-Datacenterをモニタリングする以下の例でAnomalyDetectionを適用することを考える  
-赤×のプロットがTrainingSet 緑×がTestSetを表している  
+Datacenterのモニタリングで AnomalyDetectionを適用することを考える  
+以下で 赤×のプロットがTrainingSet 緑×がTestSetを表している  
 <img src="../../img/09_07_motivating_example.png" width=50% >  
 Computerで作業が行われれば Cpu使用量が増えれば Memory使用量も増えるのがNormalなため  
-青線が囲む範囲をNormalと分類し これから外れるものをAnomalyと扱うことを  
-AnomalyDetectionには期待するが 実際には 紫線で囲む範囲をNormalとして扱ってしまう  
+青線が囲む範囲をNormalと分類し これから外れるものをAnomalyと扱いたい  
+しかし AnomalyDetectionは 紫線で囲む範囲をNormalとして扱ってしまう  
 // 内側ほど高い値を示す x1, x2それぞれが平均値(に近い値)を最もNormalとみなすため  
 
 例えば左上にある緑×はCpuLoad(x1)が低いのにMemoryUsage(x2)が高いため  
 Anomalyと分類することを期待するが AnomalyDetectionは上記の右側にある通り  
 x1, x2 それぞれを参照し それ程TrainingSetのFeatureから離れていないためNormalと扱う  
 
-本例のように Feature間(x1, x2)の相関を考慮し AnomalyDetectionしたい場合  
+Feature間(x1, x2)の相関を考慮し AnomalyDetectionしたい場合  
 MultivariateGaussianDistributionを用いることで実現できる  
 
 ## MultivariateGaussianDistributionを用いた式
