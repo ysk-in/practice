@@ -28,17 +28,16 @@ Originalは 他のFeatureの影響を受けず 軸(x1とかx2)に沿い分布す
 Original版の方がよく使われる Multivariate版の方が使用頻度は少ない  
 
 Multivariate版はFeatureの相関関係を自動で反映したAnomalyDetectionができるけど  
-`Σ(n*n Matrix)`を計算に用いるため コスト(計算量)が高く スケールしづらい
+`Σ(n*n Matrix)`を計算に用いるため コスト(計算量)が高く スケールしづらい  
 つまり Featureが多いと 計算に多大な時間がかかり使えないことがある  
 
-Original版は Featureの相関関係を反映したAnomalyDetectionを自動では行なえないけど
+Original版は Featureの相関関係を反映したAnomalyDetectionを自動では行なえないけど  
 手動でFeatureを作れば(前回の例だとCpuLoad/MemoryUsageをx3とし使用する)解決可能  
 Original版は コストが低く スケールし易いため n(Feature数)が多くなっても使用可能  
 
 Multivariate版には上記にある通り 成分の多いΣのParameterFittingできる量の  
 TrainingSet(m)が必要になるため m > n(mはnの10倍など)を満たす必要などもある
 
-使い分けに関しては結局  
-Costに優れるので手動でFeatureつくれるならOriginal版を使う方が良い  
-// 手動でFeatureつくる時間がないなどで  
-// 自動でFeatureの相関関係を反映する必要があるならMultivariate版を使う  
+つまり 使い分けは Costに優れるので手動でFeatureつくれるならOriginal版を使う方が良い  
+// 手動でFeatureつくる時間が無いなどで  
+// 自動でFeatureの相関関係を反映する必要があるときMultivariate版を使う  
