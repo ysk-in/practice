@@ -8,7 +8,8 @@ MultivariateGaussianDistributionには2つのパラメタ(μ=平均, Σ⁼共分
 どのように作用するかは前回扱った通り 以下は前回と同じ内容  
 <img src="../../img/09_08_multivariate_gaussian_distribution.png" width=50% >  
 パラメタ(μ, Σ)をどう選べば良いか・Fittingすれば良いかは 上記にある通り  
-μにはTrainingSetの平均をとり ΣにはPCAで用いたのと同じ値をとれば良い  
+μにはTrainingSetの平均をとり ΣはPCAと同じ方法で求めれば良い  
+// PCAでΣを求めた方法はweek8/09_PrincipalComponentAnalysisAlgorithm参照  
 
 こうしてμとΣをとり それを用いて以下の通りp(x)を求めることで  
 Feature間の相関を反映したAnomalyDetectionが実現できる  
@@ -38,6 +39,7 @@ Original版は コストが低く スケールし易いため n(Feature数)が�
 Multivariate版には上記にある通り 成分の多いΣのParameterFittingできる量の  
 TrainingSet(m)が必要になるため m > n(mはnの10倍など)を満たす必要などもある
 
-つまり 使い分けは Costに優れるので手動でFeatureつくれるならOriginal版を使う方が良い  
-// 手動でFeatureつくる時間が無いなどで  
-// 自動でFeatureの相関関係を反映する必要があるときMultivariate版を使う  
+つまり 以下の通り使い分けるのがおすすめ  
+* Costに優れるので 手動でFeatureつくれるなら Original版を使う  
+* 手動でFeatureつくる時間が無いなどで  
+	自動でFeatureの相関関係を反映する必要があるときMultivariate版を使う  

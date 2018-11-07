@@ -4,7 +4,7 @@ AnomalyDetectionを考えるために必要なガウス分布について扱う
 
 ## ガウス分布とは なにか
 xが実数で 平均がμ 分散が<img src="https://latex.codecogs.com/gif.latex?\sigma^{2}" title="\sigma^{2}" />のとき  
-xの分布は<img src="https://latex.codecogs.com/gif.latex?x&space;\sim&space;N(\mu,&space;\siguma^{2})" title="x \sim N(\mu, \siguma^{2})" /> と表すことができ  
+xの分布は<img src="https://latex.codecogs.com/gif.latex?x&space;\sim&space;N(\mu,&space;\sigma^{2})" title="x \sim N(\mu, \sigma^{2})" /> と表すことができ  
 // ~は分布が等しいことを示し NはNormalの略 Nは2つのパラメタμと<img src="https://latex.codecogs.com/gif.latex?\sigma^{2}" title="\sigma^{2}" />を持つ を示している    
 このGaussianDistributionをプロットすると以下の通りベル型のカーブを描く  
 <img src="../../img/09_02_gaussian_distribution.png" width=50% >  

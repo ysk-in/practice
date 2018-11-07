@@ -3,7 +3,7 @@ https://www.coursera.org/learn/machine-learning/lecture/LSpXm/choosing-what-feat
 AnomalyDetectionでFeatureを どう選べば良いか デザインすれば良いか について扱う  
 
 AnomalyDetectionが上手く機能するかには Featureの選択が非常に大きな影響を与える  
-// らしい たしかに Featureの組み合わせからAnomalyか判断するので直感的にもそう思う  
+// らしい それぞれのFeatureからAnomalyか判断するので直感的にもそう思う  
 
 ## Non-GaussianなFeatureの変換
 FeatureをAnomalyDetectionに使う前に 分布をプロットすることは有効 プロット結果が  
@@ -31,6 +31,6 @@ AnomalyなDataをプロットして緑×になってしまう場合 正しくAno
 Anomalyなとき 非常に 大きな/小さな 値になるFeatureを選択することが望ましい  
 DatacenterのComputerをモニタリングする例でFeatureの選び方を具体的に考える  
 <img src="../../img/09_06_error_analysis_example.png" width=50% >  
-例えば 外部通信を伴わない処理で無限ループに陥ってしまっているようなケースでは  
+例えば 外部通信を伴わない処理で無限ループに陥っているケースでは  
 CpuLoadが大きく上昇し NetworkTrafficは小さくなることが想定される  
-そのため x5(やその変型のx6)のようなFeatureを選ぶことがAnomalyDetectionでは有効  
+そのため x5(やその変型のx6)のようなFeatureを作り・使うことがAnomalyDetectionでは有効  

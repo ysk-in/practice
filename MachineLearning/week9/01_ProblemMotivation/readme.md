@@ -1,7 +1,7 @@
 # Problem Motivation
 https://www.coursera.org/learn/machine-learning/lecture/V9MNG/problem-motivation  
 ここからは 教師なし学習AnomalyDetectionについて扱う  
-AnomalyDetectionは教師なし学習だけど 教師あり学習にも見える側面がある  
+AnomalyDetectionは教師なし学習だけど 教師あり学習にも見える側面がある らしい  
 
 ## AnomalyDetectionとはなにか
 例えば エンジンのQAにAnomalyDetectionを適用する場合  

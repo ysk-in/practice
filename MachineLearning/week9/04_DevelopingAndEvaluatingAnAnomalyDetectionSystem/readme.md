@@ -4,7 +4,7 @@ https://www.coursera.org/learn/machine-learning/lecture/Mwrni/developing-and-eva
 
 ## AnomalyDetectionにおいてのEvaluatingの有用性
 関数のEvaluation(評価)を実数(1つの値)で行なう重要性は以前にも扱った  
-AnomalyDetectionでもEvaluation使うことが出来れば 以下を判断する際に有用  
+AnomalyDetectionでもEvaluationを使うことが出来れば 以下を判断する際に有用  
 * どのFeatureを使うか  
 * 閾値(ε)として どの値を適用するか  
 <img src="../../img/09_04_importance_of_real_number_evaluation.png" width=50% >  
@@ -13,7 +13,7 @@ AnomalyDetectionでもEvaluation使うことが出来れば 以下を判断す�
 // AnomalyDetectionではラベルyを Anomalyなら1 として扱う
 
 ## AnomalyDetectionのEvaluatingにおけるDataSetの分割方法
-例えば 10000件のGood/NormalなData 20件のAnomalousなDataがある場合  
+例えば 10,000件のGood/NormalなData 20件のAnomalousなDataがある場合  
 // AnomalousなDataは一般的に20-50件程度  
 このDataをTrainingSet/ CV Set/ TestSetとして以下のように分けEvaluatingする  
 <img src="../../img/09_04_evaluating_example.png" width=50% >  
