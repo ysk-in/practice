@@ -14,8 +14,8 @@ PCAを実行する前にData(Feature)の前準備を行う必要がある
 <img src="../../img/08_09_pca_algorithm.png" width=50% >  
 
 そのためには まず共分散行列(convariance matrix)を求める必要がある  
-// 共分散行列がなんなのか分からない...  
-// 実装する上では理解できなくても出来るっぽいのでひとまず理解は後回しにする  
+// 共分散行列は以下を参照  
+// week9/08_AnomalyDetectionUsingTheMultivariateGaussianDistribution  
 ConvarianceMatrixはΣで表され `n*n行列`  
 // 総和を示す記号と被るけど どちらを意味するかは文脈から分かる  
 ConvarianceMatrixで求めた値(Sigma)を用いてeigenvectorsをsvd関数により求める  
