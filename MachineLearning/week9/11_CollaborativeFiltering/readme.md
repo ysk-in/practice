@@ -11,7 +11,7 @@ ContentBasedRecommendationsではMovieの性質x1(Romance) x2(Action)を
 なので ここでは以下の通りx1 x2を?と置く  
 <img src="../../img/09_11_problem_motivation.png" width=50% >  
 ここで なんらかの方法で各ユーザのθが上記の通り得られたとする  
-例えば θ^{(1)}=Aliceは Romanceが好きで Actionは好きでない ことを示す
+例えば θ^{(1)}=Aliceは Romanceが好きで Actionは好きでない ことを示す  
 θがあれば 上記の右下の式にあるようにParameterFittingできれば xは求められそう  
 
 ## CollaborativeFilteringのParameterFittingの式
