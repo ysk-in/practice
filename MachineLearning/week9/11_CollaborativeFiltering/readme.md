@@ -23,7 +23,12 @@ ContentBasedRecommendationsではMovieの性質x1(Romance) x2(Action)を
 1. Initial θを適当に決める それに基づきxを求める  
 1. 求めたxに基づき θを求める  
 1. 求めたθに基づき xを求める  
-1. 繰り返す  
+1. 繰り返して 最適化する  
 
 以上の手順でFeatureLearningできる  
 <img src="../../img/09_11_collaborative_filtering_algorithm.png" width=50% >
+このアプローチは 各Userが複数MovieをRatingしており  
+また 複数UserからMovieがRatingされることで実現が可能になる  
+
+このように たくさんのUserによりCollaborativeにFeature改善が行われるため  
+CollaborativeFilterと呼ばれる  
