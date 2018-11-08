@@ -24,6 +24,6 @@ Yの各成分はθとxから以下の通り求めることができる
 <img src="../../img/09_13_finding_related_movies.png" width=50% >  
 つまり <img src="https://latex.codecogs.com/gif.latex?x^{(i)}" title="x^{(i)}" /> と似た成分を持つ(距離の近い) <img src="https://latex.codecogs.com/gif.latex?x^{(j)}" title="x^{(j)}" />を採れば良い  
 
-ちなみに CollaborativeFilterでFittingするFeature x を求めることができ
+ちなみに CollaborativeFilterでFittingするFeature x を求めることができ  
 このxは対象の重要なFeatureを補足する傾向はあるのだが  
 このxが何を意味する(何のFeatureを捉えたもの)か を 人間が可視化するのは難しい  
