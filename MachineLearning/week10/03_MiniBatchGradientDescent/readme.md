@@ -12,3 +12,6 @@ Mini-Batchはその中間 1Stepに2～100程度のTrainingSetsを使用してパ
 ## Mini-BatchGradientDescentのアルゴリズム
 1Stepに使用するTrainingSets数b=10 全TrainingSets数m=1000の場合 以下でFittingする  
 <img src="../../img/10_03_mini-batch_gradient_descent_algorithm.png" width=50% >  
+ParameterFittingの1Stepに(1件や全件でなく)適当なMini-batch件を使用することで  
+FittingをVectorizeし かつ 適宜ParameterFittingできるため  
+BatchやStochasticよりも 優れたパフォーマンスをだせることがある  
