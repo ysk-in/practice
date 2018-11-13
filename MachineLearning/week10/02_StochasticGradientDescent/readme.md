@@ -23,8 +23,10 @@ Stochasticでは 各TrainingSetのCostのSummationで全体のCostを算出す�
 そのため 各TrainingSetについてCostが最小化できれば良いため  
 まず最初のTrainingSetだけにちょっとFittingできるようにパラメタの補正を行い  
 次に2番目のTrainingSetにFitting 3番目...のように各TrainingSetについてFittingする
-// そのため コンピュータメモリが大量に必要でなくなったり  
-// 1回のParameterFitting毎には大量の計算が不要になる  
+
+これにより コンピュータメモリの使用量が減らせたり  
+計算量が減らせ(?)また早くParameterFittingできることもある(?)  
+// 全件のTrainingSets使うことなく ParameterFittingが収束したら その分早く終わる?
 
 ## StochasticGradientDescentのアルゴリズム
 StochasticGradientDescentは以下で実現できる  
