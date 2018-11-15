@@ -10,7 +10,7 @@ Developerの貴重な時間を浪費してしまう恐れがある 適切に改�
 Photo OCRの例で考える これは以下3つのコンポーネント(コンポ)からなるシステム  
 このシステムのAccuracyが現在72%で コンポの改良を検討している  
 <img src="../../img/11_04_estimating_the_errors_due_to_each_component.png
-" width=100% >  
+" width=50% >  
 このとき 1個目のコンポ=TextDetectionの出力 つまり画像のテキスト領域検出を  
 手動で精度100%になるようデータを作り 次のコンポに渡すようにし Accuracyを求める  
 次に2個目についても同様に手動で100%にしAccuracyを求める  
@@ -21,16 +21,16 @@ Photo OCRの例で考える これは以下3つのコンポーネント(コン�
 
 ## Ceiling Analysisの例 顔認識
 以下のような画像から顔を認識し 友だちかどうかを判定する システムを考える  
-<img src="../../img/11_04_another_ceiling_analysis_example_1_issue.png" width=100% >  
+<img src="../../img/11_04_another_ceiling_analysis_example_1_issue.png" width=50% >  
 
 このシステムのパイプラインは以下が考えられる  
-<img src="../../img/11_04_another_ceiling_analysis_example_2_pipeline.png" width=100% >  
+<img src="../../img/11_04_another_ceiling_analysis_example_2_pipeline.png" width=50% >  
 // ただ実際の現場で顔認識する際は この通りでは無いけどね 的なことも仰ってたように思う  
 背景を除去し 顔の位置を検知し 顔から 目・鼻・口を認識して ラベル付けするパイプライン  
 
 このパイプラインについても同様に CeilingAnalysisを行なうことで  
 以下のように各コンポを改善したときの Accuracy向上の上限を分析することができる  
-<img src="../../img/11_04_another_ceiling_analysis_example_3_analysis.png" width=100% >  
+<img src="../../img/11_04_another_ceiling_analysis_example_3_analysis.png" width=50% >  
 つまり 顔や目の検知コンポを改良することが効果が大きく 背景除去コンポ改良の効果は小さい  
 
 ちなみに背景除去コンポの効果が小さい は実際にもみられたことがある事例らしい  
