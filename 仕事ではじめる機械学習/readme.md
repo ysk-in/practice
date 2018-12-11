@@ -532,7 +532,7 @@ k-NNの特徴
 - 線形回帰(Linear Regression): データを直線で近似するもの  
 - 多項式回帰(Polynomial Regression): 曲線で近似したもの  
 - Lasso回帰, Ridge回帰, Elastic Net  
-  線形回帰に以下を正則化項として追加したもの
+  線形回帰に以下を正則化項として追加したもの  
   Ridge回帰は学習した重みの2乗を(L2正則化)  
   Lasso回帰は学習した重みの絶対値を(L1正則化)  
   Elastic Netはその両方
