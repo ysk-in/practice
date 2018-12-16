@@ -1,10 +1,14 @@
 #include "pch.h"
 #include "Vector.h"
 #include "complex.h"
+#include "Shape.h"
+#include "vector_template.h"
+#include "Less_than.h"
 
 #include <cmath>
 #include <iostream>
 #include <string>
+#include <list>
 
 // using namespace std;
 
@@ -148,5 +152,56 @@ int main() {
     Vector vl1 = {1, 2, 3, 4, 5};
     Vector vl2 = {1.23, 3.45, 6.7, 8};
 
+    {
+        Point p = Point{};
+        Smiley s = Smiley{p, 1};
+        s.set_mouth(new Circle(p, 1));
+        s.add_eye(new Circle{p, 1});
+        s.add_eye(new Circle{p, 1});
+        s.draw();
+
+        std::unique_ptr<Shape> sp = read_shape(std::cin);
+    }
+
+    Vector vl1_copy = Vector{vl1};
+    vl1_copy.print_elem();
+    vl1_copy[1] = 20;
+    vl1_copy.print_elem();
+    vl1.print_elem();
+    vl1 = vl1_copy;
+    vl1.print_elem();
+
+    Vector vec_op_pls = vl1 + vl1_copy;
+    vec_op_pls.print_elem();
+
+    // 以下でVectorのMoveコンストラクタが実行される。
+    // これによりvec_op_plsはデストラクタが実行可能な状態に遷移する(らしい)
+    Vector moved_vec = std::move(vec_op_pls);
+
+    vector_template<int> vector_template_int(4);
+    vector_template<std::string> vector_template_str(2);
+    vector_template<std::list<int>> vector_template_list_int(4);
+
+    vector_template_str.add_elem(std::string{"aa"});
+    vector_template_str.add_elem(std::string{"bb"});
+    vector_template_str.add_elem(std::string{"cc"});
+    print_vector_template(vector_template_str);
+
+    std::cout << "end(expect ¥0) = " << *vector_template_str.end() << std::endl;
+    for (auto vvv : vector_template_str) {
+        std::cout << vvv << std::endl;
+    }
+
+    vector_template_int.add_elem(1);
+    vector_template_int.add_elem(2);
+    vector_template_int.add_elem(3);
+    std::cout << "sum of vector_template_int is "
+              << vector_template_sum(&vector_template_int, 0) << std::endl;
+
+    Less_than<int> lti{42};
+    Less_than<std::string> lts{"B"};
+    std::cout << "lti(1)=" << lti(1) << std::endl;
+    std::cout << "lts(A)=" << lts(std::string{"A"}) << std::endl;
+    std::cout << "lts(C)=" << lts(std::string{"C"}) << std::endl;
 
 }
