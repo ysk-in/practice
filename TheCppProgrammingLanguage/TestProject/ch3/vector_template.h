@@ -91,4 +91,5 @@ Value vector_template_sum(const Container* c, Value v) {
 //        std::cout << s << std::endl;
 //}
 
+
 #endif //TESTPROJECT_VECTOR_TEMPLATE_H

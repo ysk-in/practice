@@ -1,7 +1,6 @@
 #include "vector_template.h"
 #include <stdexcept>
 
-
 template<typename T>
 const T& vector_template<T>::operator[](int i) const {
     if (i < 0 || size() <= i) {

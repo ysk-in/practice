@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <istream>
+#include <memory>
 
 class Point {
 public:

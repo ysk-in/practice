@@ -187,7 +187,6 @@ int main() {
     vector_template_str.add_elem(std::string{"cc"});
     print_vector_template(vector_template_str);
 
-    std::cout << "end(expect ¥0) = " << *vector_template_str.end() << std::endl;
     for (auto vvv : vector_template_str) {
         std::cout << vvv << std::endl;
     }
@@ -204,4 +203,12 @@ int main() {
     std::cout << "lts(A)=" << lts(std::string{"A"}) << std::endl;
     std::cout << "lts(C)=" << lts(std::string{"C"}) << std::endl;
 
+    std::list<int> int_list{10, 20, 30, 40, 50};
+    std::cout << "less_than_count = " << less_than_count(int_list, lti) << std::endl;
+    int x_test_lambda = 25;
+    std::cout << "less_than_count(lambda) = "
+              << less_than_count(int_list, [&](int a) { return a < x_test_lambda; }) << std::endl;
+
+    less_than_f(3, 2, 'c', 1, "aaaa");
+    std::cout << std::endl;
 }

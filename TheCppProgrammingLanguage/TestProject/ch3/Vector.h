@@ -35,12 +35,13 @@ public:
 
     Vector(const Vector& a);
 
-    // ムーブコンストラクタ。&&は右辺値参照を意味する。
+    // ムーブコンストラクタ(Move Constructor)。&&は右辺値参照を意味する。
     // std::move(Obj)やreturn Obj時などで、このコンストラクタは呼ばれる。
     // これにより、右辺のVectorの要素を左辺に(Copyするのでなく)Moveできる。
     Vector(Vector&& a) :
             elem{a.elem}, sz{a.sz} {
-        // この処理により
+        // ↑でelem, sz の参照先として引数aのメンバを指すようにする。
+        // ↓でaのメンバからは参照しなくする。これでMoveが実現できる。
         std::cout << "Move Constructor of Vector was called." << std::endl;
         a.elem = nullptr;
         a.sz = 0;
