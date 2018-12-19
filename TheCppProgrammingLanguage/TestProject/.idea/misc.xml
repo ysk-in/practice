@@ -5,6 +5,7 @@
     <sourceRoots>
       <file path="$PROJECT_DIR$/ch3" />
       <file path="$PROJECT_DIR$/ch4" />
+      <file path="$PROJECT_DIR$/ch5" />
     </sourceRoots>
   </component>
 </project>

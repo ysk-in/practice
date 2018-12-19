@@ -6,6 +6,8 @@
 #include <stdexcept>
 #include <map>
 #include <algorithm>
+#include <set>
+#include <fstream>
 
 std::string compose(const std::string& name, const std::string& domain) {
     return name + '@' + domain;
@@ -387,6 +389,53 @@ void test_find() {
     std::cout << str << std::endl;
 }
 
+void test_ostream_iterator() {
+    std::ostream_iterator<std::string> oo{std::cout};
+    *oo = "Hello, ";
+    oo++;
+    *oo = "world!";
+
+    std::string from, to;
+    std::cout << "Please input the file path(from and to)" << std::endl;
+    std::cin >> from >> to;
+
+    std::ifstream is{from};
+    std::ofstream os{to};
+
+    std::set<std::string> b{std::istream_iterator<std::string>{is},
+                            std::istream_iterator<std::string>{}};
+    std::copy(b.begin(), b.end(), std::ostream_iterator<std::string>{os, "¥n"});
+
+    std::cout << "eof or os = " << (!is.eof() || !os) << std::endl;
+}
+
+struct Greater_than {
+    int val;
+
+    Greater_than(int v) : val{v} {}
+
+    bool operator()(const std::pair<std::string, int>& r) {
+        return r.second > val;
+    }
+};
+
+void print_greater_than() {
+    std::map<std::string, int> m = {
+            {std::string{"AAA"}, 999999},
+            {std::string{"ZZZ"}, 123456},
+    };
+    // predicateを使う場合は以下
+//    auto p = std::find_if(m.begin(), m.end(), Greater_than(1999999));
+    // Lambda式を使う場合は以下
+    auto p = std::find_if(m.begin(), m.end(),
+            [](const std::pair<std::string, int>& r) { return r.second > 100; });
+    if (p != m.end())
+        std::cout << "Found" << std::endl;
+    else
+        std::cerr << "Not Found" << std::endl;
+}
+
+
 int main() {
     std::cout << "ch4main" << std::endl;
 
@@ -400,5 +449,7 @@ int main() {
 //    test_list();
 //    test_map();
 //    test_vec_sort();
-    test_find();
+//    test_find();
+//    test_ostream_iterator();
+    print_greater_than();
 }
