@@ -10,3 +10,9 @@ https://www.amazon.co.jp/独学プログラマー-Python言語の基本から仕
 
 ## 仕事で始める機械学習
 https://www.oreilly.co.jp/books/9784873118215/  
+
+
+
+## GameProj
+
+https://dixq.net/g/index.html  
