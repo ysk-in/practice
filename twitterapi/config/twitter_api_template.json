@@ -1,0 +1,10 @@
+{
+  "api": {
+    "key": "<key-XXX>",
+    "secret": "<secret-XXX>"
+  },
+  "access": {
+    "token": "<token-XXX>",
+    "secret": "<secret-XXX>"
+  }
+}
