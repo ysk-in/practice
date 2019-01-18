@@ -1,7 +1,8 @@
+from math import sqrt
+
 from sklearn import datasets, svm
 from sklearn.metrics import confusion_matrix, mean_squared_error
 from sklearn.model_selection import train_test_split
-from math import sqrt
 import numpy as np
 
 if __name__ == "__main__":

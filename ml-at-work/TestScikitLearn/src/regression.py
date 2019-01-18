@@ -1,8 +1,9 @@
+from math import sqrt
+
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import datasets, linear_model
 from sklearn.metrics import mean_squared_error, r2_score
-from math import sqrt
 
 if __name__ == "__main__":
     # https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html
