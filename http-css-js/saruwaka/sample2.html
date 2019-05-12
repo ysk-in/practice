@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>sample2</title>
+</head>
+<style>
+  .example img {
+    /*画像の幅を50px*/
+    width: 50px;
+  }
+
+  .grandpa {
+    width: 200px;
+    background: silver;
+  }
+
+  .parent {
+    /*200pxの半分で100pxに*/
+    width: 50%;
+    background: yellow;
+  }
+
+  .parent p {
+    width: 50%;
+    background: orange;
+  }
+
+  #test {
+    background: orange;
+    /*height: autoは初期値*/
+    height: 110px;
+  }
+</style>
+
+<body>
+  <p class="example">
+    <img src="https://saruwakakun.com/wp-content/uploads/2016/11/IMG_9164.jpeg" alt="サルワカくんの顔" />
+  </p>
+
+  <div class="grandpa">
+    <!--親のさらに親-->
+    <div class="parent">
+      <!--親-->
+      <p>これは要素です</p>
+    </div>
+  </div>
+
+  <div id="test">
+    <p>子要素です。</p>
+    <p><img src="https://saruwakakun.com/wp-content/uploads/2016/11/IMG_9164.jpeg" alt="サルワカくんの顔（通常）" /></p>
+  </div>
+</body>
