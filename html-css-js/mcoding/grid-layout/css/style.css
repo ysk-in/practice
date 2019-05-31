@@ -31,6 +31,7 @@ a:active {
   border-bottom: 3px solid;
   border-radius: 5px;
   background-color: #fff;
+  overflow: hidden;
 }
 .item-m {
   width: 364px;
@@ -134,4 +135,31 @@ a:active {
 }
 .nav-item a:hover::after {
   width: 100%;
+}
+.image-group {
+  position: relative;
+  background: #000;
+}
+.image-group::after {
+  content: "MORE";
+  position: absolute;
+  width: 155px;
+  height: 55px;
+  top: 50%;
+  left: 150%;
+  transform: translate(-50%, -50%);
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 2em;
+  color: #fff;
+  border: solid 5px #fff;
+  padding: 10px 16px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.item > a:hover img {
+  opacity: 0.5;
+}
+.item > a:hover .image-group::after {
+  left: 50%;
+  transition: all 0.3s ease-in-out;
 }
