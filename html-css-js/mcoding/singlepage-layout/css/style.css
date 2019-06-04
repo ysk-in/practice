@@ -82,12 +82,30 @@ body {
 .heading::before,
 .heading::after {
   content: "";
+  width: 0.3em;
+  height: 0.3em;
+  display: inline-block;
+  text-align: center;
+  border: solid 1px;
+  vertical-align: middle;
+  transform: rotate(45deg);
+}
+.heading::before {
+  margin-right: 0.3em;
+}
+.heading::after {
+  margin-left: 0.3em;
+}
+/* 下線2本を引くスタイル
+.heading::before,
+.heading::after {
+  content: "";
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   border-bottom: 1px solid #999;
-}
+} */
 .heading::before {
   bottom: 5px;
 }
@@ -108,6 +126,7 @@ body {
 .work-box {
   position: relative;
   display: table-cell;
+  overflow: hidden;
 }
 .work-box::after {
   content: "";
@@ -125,6 +144,11 @@ body {
   display: block;
   width: 100%;
   margin: 0 0 60%;
+  transition: transform 0.5s;
+}
+.work-image:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .work-description {
   position: absolute;
@@ -170,6 +194,10 @@ body {
 }
 .work-box:nth-child(odd) .work-image {
   margin: 60% 0 0;
+  transform-origin: top center;
+}
+.work-box:nth-child(even) .work-image {
+  transform-origin: bottom center;
 }
 .work-box:nth-child(odd) .work-description,
 .work-box:nth-child(odd)::after {
