@@ -15,7 +15,7 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-  padding-inline-start: 0; /* sanitize.cssの40px指定を上書き，ナビゲーションリンクの左側のpaddingを削除。 */
+  padding-inline-start: 0; /* user agent stylesheet(Chrome)の40px指定を上書き，ナビゲーションリンクの左側のpaddingを削除。 */
 }
 a:link,
 a:visited,
