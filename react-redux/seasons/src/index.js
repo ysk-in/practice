@@ -13,8 +13,7 @@ class App extends React.Component {
     );
   }
 
-  // Override React.Component method
-  render() {
+  renderContent() {
     if (this.state.errorMessage && this.state.lat === null) {
       return <div>Error: {this.state.errorMessage}</div>;
     }
@@ -22,6 +21,11 @@ class App extends React.Component {
       return <SeasonDisplay lat={this.state.lat} />;
     }
     return <Spinner message="Please accept location request" />;
+  }
+
+  // Override React.Component method
+  render() {
+    return <div className="border red">{this.renderContent()}</div>;
   }
 }
 
