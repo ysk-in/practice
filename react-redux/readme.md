@@ -26,7 +26,10 @@ Course45 ～ 71
 
 ## pics
 
-テキストの input に入力されたワードから，該当する...
+検索窓(type=text の input) に入力された言葉に該当する画像を表示する。  
+input への入力を onChange イベントで state に保持する。  
+その input を含む form が submit されたら(検索窓で Enter されたら)，onSubmit イベントでstateに設定された言葉に該当する画像を取得する処理を実行する。  
+画像を取得する処理は，UnsplashAPI を axios で実行することで実現する。
 
 # Component のライフサイクル
 
@@ -115,4 +118,4 @@ onSubmit に this.onFormSubmit を指定することでコールバックさせ�
    これでコールバックに this.onFormSubmit(e)メソッドを実行するだけの関数を定義・指定することができる。  
    onFormSubmit メソッドは this を介して実行されるため対策できる。
 
-詳細は Course85(と 84)を参照
+詳細は Course85(と 84, 92(thisが想定外 の別ケース))を参照
