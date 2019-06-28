@@ -36,6 +36,10 @@ UnsplashAPI で取得した画像の clientHeight を動的に取得し css(grid
 
 pics で学んだことのまとめを Course 107 でしてくれている。
 
+## videos
+
+pics と似たもの。pics で学んだことのおさらいが主目的。
+
 # Component のライフサイクル
 
 constructer -> render  
