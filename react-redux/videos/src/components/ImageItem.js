@@ -1,6 +1,6 @@
 import "./ImageItem.css";
 import React from "react";
-import getTitle from "../utils/GetTitle";
+import getDescription from "../utils/GetDescription";
 
 const ImageItem = ({ image, onImageSelect }) => {
   return (
@@ -11,7 +11,7 @@ const ImageItem = ({ image, onImageSelect }) => {
         alt={image.alt_description}
       />
       <div className="content">
-        <div className="header">{getTitle(image.description)}</div>
+        <div className="header">{getDescription(image.description)}</div>
       </div>
     </div>
   );

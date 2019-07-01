@@ -1,20 +1,34 @@
+import "./ImageDetail.css";
 import React from "react";
-import getTitle from "../utils/GetTitle";
+import getDescription from "../utils/GetDescription";
 
 const ImageDetail = ({ image }) => {
   if (!image) {
     return <div>Loading...</div>;
   }
-
-  console.log(image);
+  const tags = image.tags.map(tag => {
+    return (
+      <a
+        key={tag.title}
+        className="ui label"
+        href={`https://unsplash.com/search/photos/${tag.title}`}
+      >
+        {tag.title}
+      </a>
+    );
+  });
   return (
     <div>
-      <div className="ui embed">
-        <iframe src={image.links.html} />
+      <div className="ui embed image-detail">
+        <a href={image.links.html}>
+          {/* I gave up using iframe. Because I could not find anything usable in Unsplash.
+            <iframe title="image link" src="{image.links.html}" /> */}
+          <img src={image.urls.regular} alt={image.alt_description} />
+        </a>
       </div>
       <div className="ui segment">
-        <h4 className="ui header">{getTitle(image.description)}</h4>
-        <p>Tags: {image.tags.map(tag => `${tag.title} `)}</p>
+        <h4 className="ui header">{getDescription(image.description, 500, "No description.")}</h4>
+        <div className="ui tag labels">{tags}</div>
       </div>
     </div>
   );
