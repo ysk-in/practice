@@ -40,6 +40,10 @@ pics で学んだことのまとめを Course 107 でしてくれている。
 
 pics と似たもの。pics で学んだことのおさらいが主目的。
 
+## songs
+
+Redux/React-Redux を state 管理に用いる
+
 # Component のライフサイクル
 
 constructer -> render  
@@ -128,3 +132,17 @@ onSubmit に this.onFormSubmit を指定することでコールバックさせ�
    onFormSubmit メソッドは this を介して実行されるため対策できる。
 
 詳細は Course85(と 84, 92(this が想定外 の別ケース))を参照
+
+# index.js の import について
+
+`import actions from "../actions";`これで../actions/index.js が import される。  
+Webpack により，ファイル名を指定しない場合，デフォルトで index.js が参照されるため。
+
+# Array(配列)の複製
+
+`[...oldListOfClaims, action.payload]` ES2015 で追加された記法で，元の配列 oldListOfClaims は変えず，新しい配列「oldListOfClaims の全要素+action.payload」を作ることができる。
+
+> MDN リファレンス スプレッド構文  
+> https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_array_literals
+
+詳細は Course135 (5:00 あたり) 参照
