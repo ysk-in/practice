@@ -7,7 +7,7 @@ const SongDetail = ({ song }) => {
   }
   return (
     <div>
-      <h3> Details for:</h3>
+      <h3>Details for:</h3>
       <p>
         Title:{song.title}
         <br />
