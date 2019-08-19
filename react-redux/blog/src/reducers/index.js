@@ -1,5 +1,8 @@
 import { combineReducers } from "redux";
+import postReducer from "./postReducer";
+import usersReducer from "./usersReducer";
 
 export default combineReducers({
-  dummy: () => "For error(Store does not have a valid reducer...)",
+  posts: postReducer,
+  users: usersReducer
 });
