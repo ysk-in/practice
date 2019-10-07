@@ -1,0 +1,9 @@
+applications:
+  - name: react-pics
+    path: build/
+    buildpacks:
+      - staticfile_buildpack
+    instances: 1
+    memory: 128M
+    routes:
+      - route: react-pics.paas.hitachi-solutions.com
