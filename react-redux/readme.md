@@ -2,6 +2,17 @@
 
 https://www.udemy.com/react-redux/
 
+# React Redux 開発ツール
+
+## デバッグツール redux-devtools-extension
+
+Action の呼び出し履歴や State の遷移を参照  
+https://github.com/zalmoxisus/redux-devtools-extension
+
+以下の Course で紹介  
+Course 223. Using Redux Dev Tools to Inspect the Store  
+Course 224. Debug Sessions with Redux Dev Tools
+
 # プロジェクトについて
 
 ## jsx
