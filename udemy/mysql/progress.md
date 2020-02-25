@@ -16,7 +16,7 @@
 | 2/22(土) | 自宅 | 26   | 96   | 72   | 47   | -24    |
 | 2/23(日) | 自宅 | 73   | 128  | 130  | 48   | +2     |
 | 2/24(月) | 自宅 | 131  | 160  | 171  | 41   | +11    |
-| 2/25(火) | 会社 | TBD  | 180  | TBD  | TBD  | TBD    |
+| 2/25(火) | 会社 | 172  | 180  | 193  | 22   | +13    |
 | 2/25(火) | 自宅 | TBD  | 192  | TBD  | TBD  | TBD    |
 | 2/26(水) | 会社 | TBD  | 212  | TBD  | TBD  | TBD    |
 | 2/26(水) | 自宅 | TBD  | 224  | TBD  | TBD  | TBD    |
@@ -126,3 +126,15 @@ mysql> SHOW VARIABLES LIKE '%time_zone%';
 
 TZ 指定なしで作成した Database(? Database 単位で保持される認識だけど未確認) はシステムの TZ が使われているっぽい  
 Database は TZ=UTC で作成し プログラムから読み書きするときも TZ=UTC で扱うようにするのが無難な気がする
+
+### CAST(データ型の変換), BETWEEN
+
+185 Between
+
+DATETIME 型や DATE 型を BETWEEN で比較する場合 CAST()を適切に使うべき
+
+https://dev.mysql.com/doc/refman/5.6/ja/comparison-operators.html#operator_between
+
+> 日付または時間の値とともに BETWEEN を使用したときの結果を最適にするには、CAST() を使用して明示的に値を目的のデータ型に変換します。例 : DATETIME を 2 つの DATE 値と比較する場合は、DATE 値を DATETIME 値に変換します。DATE との比較で '2001-1-1' などの文字列定数を使用する場合は、文字列を DATE にキャストします。
+
+CAST 使用例 `SELECT CAST('2000-01-01' AS DATETIME);`
