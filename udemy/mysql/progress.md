@@ -17,7 +17,7 @@
 | 2/23(日) | 自宅 | 73   | 128  | 130  | 48   | +2     |
 | 2/24(月) | 自宅 | 131  | 160  | 171  | 41   | +11    |
 | 2/25(火) | 会社 | 172  | 180  | 193  | 22   | +13    |
-| 2/25(火) | 自宅 | TBD  | 192  | TBD  | TBD  | TBD    |
+| 2/25(火) | 自宅 | 194  | 192  | 205  | 12   | +13    |
 | 2/26(水) | 会社 | TBD  | 212  | TBD  | TBD  | TBD    |
 | 2/26(水) | 自宅 | TBD  | 224  | TBD  | TBD  | TBD    |
 | 2/27(木) | 会社 | TBD  | 244  | TBD  | TBD  | TBD    |
@@ -138,3 +138,58 @@ https://dev.mysql.com/doc/refman/5.6/ja/comparison-operators.html#operator_betwe
 > 日付または時間の値とともに BETWEEN を使用したときの結果を最適にするには、CAST() を使用して明示的に値を目的のデータ型に変換します。例 : DATETIME を 2 つの DATE 値と比較する場合は、DATE 値を DATETIME 値に変換します。DATE との比較で '2001-1-1' などの文字列定数を使用する場合は、文字列を DATE にキャストします。
 
 CAST 使用例 `SELECT CAST('2000-01-01' AS DATETIME);`
+
+### IFNULL
+
+204 Left Join
+
+NULL を任意の値で置換する方法  
+以下のように total_spent が NULL になるものがあるとき
+
+```
+mysql> SELECT
+    ->     first_name, last_name, SUM(amount) AS total_spent
+    -> FROM
+    ->     customers
+    ->         LEFT JOIN
+    ->     orders ON customers.id = orders.customer_id
+    -> GROUP BY customers.id
+    -> ORDER BY total_spent;
++------------+-----------+-------------+
+| first_name | last_name | total_spent |
++------------+-----------+-------------+
+| David      | Bowie     |        NULL |
+| Blue       | Steele    |        NULL |
+| Boy        | George    |      135.49 |
+| Bette      | Davis     |      450.25 |
+| George     | Michael   |      813.17 |
++------------+-----------+-------------+
+5 rows in set (0.00 sec)
+
+mysql>
+```
+
+IFNULL で以下のように置換できる
+
+```
+mysql> SELECT
+    ->     first_name, last_name, IFNULL(SUM(amount), 0) AS total_spent
+    -> FROM
+    ->     customers
+    ->         LEFT JOIN
+    ->     orders ON customers.id = orders.customer_id
+    -> GROUP BY customers.id
+    -> ORDER BY total_spent;
++------------+-----------+-------------+
+| first_name | last_name | total_spent |
++------------+-----------+-------------+
+| David      | Bowie     |        0.00 |
+| Blue       | Steele    |        0.00 |
+| Boy        | George    |      135.49 |
+| Bette      | Davis     |      450.25 |
+| George     | Michael   |      813.17 |
++------------+-----------+-------------+
+5 rows in set (0.00 sec)
+
+mysql>
+```
