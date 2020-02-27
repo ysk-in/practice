@@ -21,7 +21,7 @@
 | 2/26(水) | 会社 | 206  | 212  | 211  | 6    | -1     |
 | 2/26(水) | 自宅 | 212  | 224  | 220  | 9    | -4     |
 | 2/27(木) | 会社 | 221  | 244  | 251  | 31   | 7      |
-| 2/27(木) | 自宅 | TBD  | 256  | TBD  | TBD  | TBD    |
+| 2/27(木) | 自宅 | 252  | 256  | 266  | 15   | 10     |
 | 2/28(金) | 会社 | TBD  | 276  | TBD  | TBD  | TBD    |
 | 2/28(金) | 自宅 | TBD  | 288  | TBD  | TBD  | TBD    |
 | 2/29(土) | 自宅 | TBD  | 320  | TBD  | TBD  | TBD    |
@@ -251,3 +251,23 @@ CREATE TABLE likes (
 
 タグはイメージし易いけど テーブル定義いい加減に考えると 誤って 2 の手法で対応しちゃったみたいなことはありそう
 使い方/使われ方でどのパターンが良いかは変わる
+
+### 参照(REFERENCES, RELATIONSHIPS)されていないレコードを SELECT
+
+259 Instagram Clone Challenge 3
+
+写真を一枚も投稿していないユーザを SELECT する場合は以下
+
+```
+SELECT
+    users.id, username
+FROM
+    users
+        LEFT JOIN
+    photos ON users.id = photos.user_id
+WHERE
+    photos.id IS NULL
+ORDER BY users.id;
+```
+
+LEFT JOIN に ユーザを指定し (FROM に指定し) 参照先テーブルの適当なカラム IS NULL を確認すれば良い
