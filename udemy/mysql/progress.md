@@ -22,9 +22,14 @@
 | 2/26(水) | 自宅 | 212  | 224  | 220  | 9    | -4     |
 | 2/27(木) | 会社 | 221  | 244  | 251  | 31   | 7      |
 | 2/27(木) | 自宅 | 252  | 256  | 266  | 15   | 10     |
-| 2/28(金) | 会社 | TBD  | 276  | TBD  | TBD  | TBD    |
-| 2/28(金) | 自宅 | TBD  | 288  | TBD  | TBD  | TBD    |
-| 2/29(土) | 自宅 | TBD  | 320  | TBD  | TBD  | TBD    |
+| 2/28(金) | 会社 | 266  | 276  | 266  | 0    | -10    |
+| 2/28(金) | 自宅 | 266  | 288  | 282  | 16   | -6     |
+| 2/29(土) | 休み | 282  | 320  | 282  | 0    | -38    |
+| 3/1(日)  | 自宅 | 283  | 320  | 296  | 14   | -24     |
+
+### REF
+
+https://github.com/nax3t/node-and-mysql
 
 ## ノート
 
@@ -271,3 +276,32 @@ ORDER BY users.id;
 ```
 
 LEFT JOIN に ユーザを指定し (FROM に指定し) 参照先テーブルの適当なカラム IS NULL を確認すれば良い
+
+### WHERE vs HAVING
+
+268 Instagram Clone Challenge 7
+
+> GroupBy でグルーピングする前に抽出するのが Where 句で  
+> GroupBy でグルーピングした後に抽出するのが Having 句になります。
+
+https://dev.classmethod.jp/server-side/db/difference-where-and-having/
+
+全ての photo を like しているユーザを抽出する SELECT 文は例えば以下
+
+```
+SELECT
+    users.id, username, COUNT(user_id) AS like_count
+FROM
+    likes
+        JOIN
+    users ON likes.user_id = users.id
+GROUP BY likes.user_id
+HAVING like_count = (SELECT
+        COUNT(*)
+    FROM
+        photos)
+ORDER BY users.id;
+```
+
+GROUP BY した後で絞り込む(WHERE/HAVING)する必要がある  
+WHERE 句は GROUP BY より前に評価されてしまうため今回のケースでは HAVING 句を使う
