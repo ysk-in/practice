@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS tatujin;
-CREATE DATABASE tatujin;
-USE tatujin;
+DROP DATABASE IF EXISTS tatsujin;
+CREATE DATABASE tatsujin;
+USE tatsujin;
 
 -- 日本語使うため utf8mb4 に設定しておきたい 予期しない動作防止するため
 -- SHOW VARIABLES like 'char%';
