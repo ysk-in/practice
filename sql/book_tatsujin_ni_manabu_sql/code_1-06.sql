@@ -159,4 +159,61 @@ INSERT INTO Students VALUES
 ;
 
 -- ENSYU 6-2
-SELECT * from Students;
+SELECT 
+    dpt
+FROM
+    students
+GROUP BY dpt
+HAVING COUNT(*) = SUM(CASE
+    WHEN sbmt_date BETWEEN '2018-09-01' AND '2018-09-30' THEN 1
+    ELSE 0
+END);
+--     WHEN DATE_FORMAT(sbmt_date, '%Y%m') <= 201809 THEN 1
+
+-- ENSYU 6-3 PREPARE
+DROP TABLE IF EXISTS Items;
+
+CREATE TABLE Items (
+    item VARCHAR(16) PRIMARY KEY
+);
+
+INSERT INTO Items VALUES
+    ('ビール'),
+    ('紙オムツ'),
+    ('自転車')
+;
+
+DROP TABLE IF EXISTS ShopItems;
+ 
+CREATE TABLE ShopItems (
+    shop VARCHAR(16),
+    item VARCHAR(16),
+    PRIMARY KEY (shop , item)
+);
+
+INSERT INTO ShopItems VALUES
+    ('仙台',  'ビール'),
+    ('仙台',  '紙オムツ'),
+    ('仙台',  '自転車'),
+    ('仙台',  'カーテン'),
+    ('東京',  'ビール'),
+    ('東京',  '紙オムツ'),
+    ('東京',  '自転車'),
+    ('大阪',  'テレビ'),
+    ('大阪',  '紙オムツ'),
+    ('大阪',  '自転車')
+;
+
+-- ENSYU 6-3
+SELECT 
+    shop,
+    COUNT(si.item) AS my_item_cnt,
+    (SELECT 
+            COUNT(item)
+        FROM
+            items) - COUNT(si.item) AS diff_cnt
+FROM
+    shopitems AS si
+        INNER JOIN
+    items AS i ON si.item = i.item
+GROUP BY si.shop;
