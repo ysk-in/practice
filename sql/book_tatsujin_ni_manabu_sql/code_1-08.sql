@@ -87,20 +87,16 @@ select * from personnel;
 
 -- 列から行への変換：UNION ALLの利用
 SELECT employee, child_1 AS child FROM Personnel
-UNION ALL
-SELECT employee, child_2 AS child FROM Personnel
-UNION ALL
-SELECT employee, child_3 AS child FROM Personnel
+UNION ALL SELECT employee, child_2 AS child FROM Personnel
+UNION ALL SELECT employee, child_3 AS child FROM Personnel
 ORDER BY employee DESC;
 
 DROP VIEW IF EXISTS children;
 
 CREATE VIEW Children(child)
 AS SELECT child_1 FROM Personnel
-UNION
-SELECT child_2 FROM Personnel
-UNION
-SELECT child_3 FROM Personnel;
+UNION SELECT child_2 FROM Personnel
+UNION SELECT child_3 FROM Personnel;
 
 SELECT * FROM children;
 
@@ -203,3 +199,109 @@ SELECT MASTER.age_class AS age_class,
     ON MASTER.age_class = DATA.age_class
    AND MASTER.sex_cd = DATA.sex_cd;
    
+/* 掛け算としての結合 */
+DROP TABLE IF EXISTS items;
+
+CREATE TABLE Items (
+    item_no INTEGER PRIMARY KEY,
+    item VARCHAR(32) NOT NULL
+);
+INSERT INTO Items VALUES
+    (10, 'FD'),
+    (20, 'CD-R'),
+    (30, 'MO'),
+    (40, 'DVD')
+;
+
+DROP TABLE IF EXISTS saleshistory;
+
+CREATE TABLE SalesHistory (
+    sale_date DATE NOT NULL,
+    item_no INTEGER NOT NULL,
+    quantity INTEGER NOT NULL,
+    PRIMARY KEY (sale_date , item_no)
+);
+
+INSERT INTO SalesHistory VALUES
+    ('2018-10-01',  10,  4),
+    ('2018-10-01',  20, 10),
+    ('2018-10-01',  30,  3),
+    ('2018-10-03',  10, 32),
+    ('2018-10-03',  30, 12),
+    ('2018-10-04',  20, 22),
+    ('2018-10-04',  30,  7)
+;
+
+-- 答え：その1　結合の前に集約することで、1対1の関係を作る
+SELECT I.item_no, SH.total_qty
+  FROM Items I LEFT OUTER JOIN
+                (SELECT item_no, SUM(quantity) AS total_qty
+                   FROM SalesHistory
+                  GROUP BY item_no) SH
+    ON I.item_no = SH.item_no;
+
+-- 答え：その2　集約の前に1対多の結合を行なう
+SELECT I.item_no, SUM(SH.quantity) AS total_qty
+  FROM Items I LEFT OUTER JOIN SalesHistory SH
+    ON I.item_no = SH.item_no
+ GROUP BY I.item_no;
+
+-- ENSYU 8-1
+SELECT
+	MASTER.age_class AS age_class,
+	MASTER.sex_cd AS sex_cd,
+	SUM(CASE WHEN pref_name IN ('青森', '秋田') THEN population ELSE NULL END) AS pop_tohoku,
+	SUM(CASE WHEN pref_name IN ('東京', '千葉') THEN population ELSE NULL END) AS pop_kanto
+FROM (SELECT age_class, sex_cd FROM TblAge JOIN TblSex) MASTER
+LEFT OUTER JOIN TblPop ON MASTER.age_class = TblPop.age_class
+	AND MASTER.sex_cd = TblPop.sex_cd
+GROUP BY MASTER.age_class, MASTER.sex_cd
+ORDER BY age_class, sex_cd;
+
+-- ENSYU 8-2
+SELECT employee, count(child) as child_cnt
+FROM (
+	SELECT employee, child_1 AS child FROM Personnel
+	UNION ALL SELECT employee, child_2 AS child FROM Personnel
+	UNION ALL SELECT employee, child_3 AS child FROM Personnel
+) as tmp
+GROUP BY employee
+ORDER BY child_cnt DESC
+;
+
+SELECT emp.employee, COUNT(children.child) as child_cnt
+FROM personnel as emp
+LEFT OUTER JOIN children ON children.child in (emp.child_1, emp.child_2, emp.child_3)
+GROUP BY emp.employee;
+
+-- ENSYU 8-3 PREPARE
+DROP TABLE IF EXISTS class_a;
+
+CREATE TABLE Class_A (
+    id CHAR(1),
+    name VARCHAR(30),
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Class_A (id, name) VALUES
+    ('1', '田中'),
+    ('2', '鈴木'),
+    ('3', '伊集院')
+;
+
+DROP TABLE IF EXISTS class_b;
+
+CREATE TABLE Class_B (
+    id CHAR(1),
+    name VARCHAR(30),
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Class_B (id, name) VALUES
+    ('1', '田中'),
+    ('2', '内海'),
+    ('4', '西園寺')
+;
+
+-- ENSYU 8-3
+-- MySQL v 8.0.19 時点では MERGE INTO 文 未サポートっぽい
