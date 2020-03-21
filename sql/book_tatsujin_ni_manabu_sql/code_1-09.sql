@@ -89,9 +89,17 @@ FROM (
 ) as TMP;
 
 -- ENSYU 9-1
-SELECT COUNT(*) AS row_cnt
+SELECT
+	CASE
+		WHEN COUNT(*) = (SELECT COUNT(*) FROM Tbl_A)
+			AND COUNT(*) = (SELECT COUNT(*) FROM Tbl_B)
+            THEN "等しい"
+		ELSE "異なる"
+    END AS result
 FROM (
 	SELECT * FROM Tbl_A
-    UNION ALL SELECT * FROM Tbl_B
+    UNION SELECT * FROM Tbl_B
 ) as TMP;
 
+-- ENSYU 9-2
+-- MySQL では EXCEPT 未サポートのため飛ばす
