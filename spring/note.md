@@ -1,6 +1,44 @@
 # SpringBoot 復習
 
-https://courses.education.pivotal.io/c/349803561/
+**TODO つづき ここから**
+
+https://spring.pleiades.io/spring-boot/docs/current/reference/html/using-spring-boot.html#using-boot-whats-next
+
+- https://courses.education.pivotal.io/c/349803561/
+- https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter
+- https://spring.pleiades.io/spring-boot/docs/current/reference/html/using-spring-boot.html#using-boot-starter
+
+## Structuring
+
+ファイル(ソースコード)の典型的なレイアウトについて  
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-structuring-your-code
+
+## i18n 対応 messages ファイル
+
+未だ読めていない 参考になりそう
+
+https://github.com/tokuhirom/java-handbook/blob/master/spring/i18n.md
+
+## Spring Boot のスターター
+
+spring-boot-starter-\*
+PAL で使用した JDBC のスターターは spring-boot-starter-jdbc  
+jooq のスターター spring-boot-starter-jooq が気になる
+
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter
+
+和訳版  
+https://spring.pleiades.io/spring-boot/docs/current/reference/html/using-spring-boot.html#using-boot-starter
+
+理解しておきたい TODO
+
+- spring-boot-starter-test
+- spring-boot-starter-security
+
+# (参考) MySQL
+
+以降 Spring Boot とは直接無関係  
+MySQL について
 
 ## MySQL TCP ポート確認
 
